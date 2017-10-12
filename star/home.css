@@ -1,0 +1,29 @@
+.product{
+   width: 500px;
+   height: 500px;
+   background:url(product_picture.jpg);
+   text-align: right;
+   }
+   .banner{
+   text-align: right;
+   margin-top: 300px;
+   margin-bottom: 0px;
+   position: inherit;
+   right:0px;
+   }
+
+
+
+   width: 500px;
+   height: 500px;
+   background:url(product_picture.jpg);
+   text-align: right;
+   }
+   .banner{
+   text-align: right;
+   margin-top: 300px;
+   margin-bottom: 0px;
+   position: inherit;
+   right:0px;
+   }
+
