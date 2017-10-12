@@ -12,3 +12,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.enter-button {
+
+	padding: 8px 54px !important;
+	margin-top: 475px;
+}
+
+.enter-button:not(.show) {
+	display: none;
+}
