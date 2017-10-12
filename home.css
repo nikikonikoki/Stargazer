@@ -1,0 +1,162 @@
+/*home.css*/
+
+.logo  {
+   text-align: left; 
+   margin-top: -82px;
+   margin-left: 100px;
+   position: inherit;
+   left: 0px;
+}
+
+.level-item {
+    text-align: right;
+   margin-top: -90px;
+   margin-right: 900px;
+   position: inherit;
+   right: 0px;
+
+}
+
+.user {
+    text-align: left;
+   margin-top: -90px;
+   margin-left: 950px;
+   position: inherit;
+  left: 0px; 
+}
+.password {
+    text-align: left;
+   margin-top: -45px;
+   margin-left: 1220px;
+   position: inherit;
+  left: 0px;
+}
+
+.button{
+   text-align: left;
+   margin-top: -45px;
+   margin-left: 1500px;
+   position: inherit;
+  left: 0px
+
+}
+
+.help {
+      text-align: left;
+   margin-top: -20px;
+   margin-left: 200px;
+   position: inherit;
+  left: 0px
+  }
+
+.block {
+   opacity: 0.1;
+    text-align: left;
+   margin-top: -1090px;
+   margin-left: 0px;
+   position: inherit;
+  left: 0px
+}
+
+.space {
+  text-align: left;
+   margin-top: 920px;
+   margin-left: -1445px;
+   position: inherit;
+  left: 0px
+}
+
+/*.degree {
+    text-align: left;
+   margin-top: -920px;
+   margin-left: -1445px;
+   position: inherit;
+  left: 0px
+}
+*/
+/*hamburger.css*/
+
+
+.hamburger {
+  position: absolute;
+  margin-top: -1005px;
+  margin-left: 20px;
+  z-index: 2;
+  cursor: pointer;
+  left: 0px;
+}
+
+.line {
+  width: 50px;
+  height: 6px;
+  background: #ffffff;
+  margin-bottom: 5px;
+
+}
+
+.menu {
+  opacity: 0.3;
+  width: 320px;
+  height: 100%;
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: -320px;
+  transition: left .1s;
+}
+
+.menu-item:first-child {
+  margin-top: 67px;
+}
+
+.menu--open {
+  left: 0;
+}
+
+.menu-item {
+  font-family: nithan;
+  font-size: 35px;
+  margin-left: 100px;
+  color: #33FFFF;
+  width: -10%;
+  padding: 2rem 0rem;
+  box-sizing: border-box;
+}
+
+
+.menu-item:hover {
+  background: #91966E;
+  cursor: pointer;
+}
+
+/*ul.orbit.orbitlistJS, ul.orbit.orbitlistJS ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ul.orbit.orbitlistJS li {
+  position: absolute;
+  cursor: pointer;
+}*/
+
+/*.orbit li {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid #000;
+  background: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+
+ul.orbit.orbitlistJS li { transition: all 0.2s linear; }
+
+ul.orbit.orbitlistJS li:hover { background: #4FC2E5; }
+
+.orbit li.orbitlistJS-trace { background: #1ca; }
+
+.orbit li.orbitlistJS-active { background:#46CFB0; }
+
+*/
