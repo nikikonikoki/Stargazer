@@ -1,49 +1,36 @@
-// $(document).ready(function(){
+ $(document).ready(function(){
   
-//   var menu = $(".menu");
-//   var hamburger = $(".hamburger");
-//   var line = $(".line");
-//   var menuOpen;
+  var menu = $(".menu");
+  var hamburger = $(".hamburger");
+  var line = $(".line");
+  var menuOpen;
   
-//   function openMenu(){
-//     menu.css("left", "0px");
-//     line.css("background", "#FFF");
-//     menuOpen = true;
-//   }
+  function openMenu(){
+    menu.css("left", "0px" ,  "320px");
+    line.css("background", "#fff" ,  "320px");
+    menuOpen = true;
+  }
   
-//   function closeMenu(){
-//     hamburger.css("left", "-320px");
-//     line.css("background", "#BCAD90");
-//     menuOpen = false;
-//   }
+  function closeMenu(){
+    menu.css("left", "-320px");
+    line.css("background", "#fff", );
+    menuOpen = false;
+  }
   
-//   function toggleMenu(){
-//     if (menuOpen) {
-//       closeMenu();
-//     } else {
-//       openMenu();
-//     }
-//   }
- 
-//   hamburger.on({
-//     mouseenter: function(){
-//       openMenu();
-//     }
-//   });
+  function toggleMenu(){
+    if (menuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
   
-//   menu.on({
-//     mouseleave: function(){
-//       closeMenu();
-//     }
-    
-//   });
-  
-//   hamburger.on({
-//     click: function(){
-//       toggleMenu();
-//     }
-//   })
+  hamburger.on({
+    click: function(){
+      toggleMenu();
+    }
+  })
   
   
 
-// });
+});

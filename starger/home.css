@@ -1,86 +1,104 @@
-/*home.css*/
 
 .logo  {
    text-align: left; 
-   margin-top: -82px;
-   margin-left: 100px;
+   margin-top: -1057px;
+   margin-left: 125px;
    position: inherit;
    left: 0px;
 }
 
-.level-item {
-    text-align: right;
-   margin-top: -90px;
-   margin-right: 900px;
+.search {
+    text-align: left;
+   margin-top: -80px;
+   margin-left: 250px;
    position: inherit;
-   right: 0px;
+   left: 0px;
 
 }
 
 .user {
     text-align: left;
-   margin-top: -90px;
+   margin-top: -45px;
    margin-left: 950px;
    position: inherit;
   left: 0px; 
 }
+
 .password {
     text-align: left;
    margin-top: -45px;
-   margin-left: 1220px;
+   margin-left: 1230px;
    position: inherit;
   left: 0px;
 }
 
-.button{
-   text-align: left;
-   margin-top: -45px;
-   margin-left: 1500px;
+.login {
+  font-family: nithan;
+  font-size: 30px;
+  text-align: right;
+   margin-top: -43px;
+   margin-right: 300px;
    position: inherit;
-  left: 0px
+  right: 0px;
+}
+
+.signin{
+  font-family: nithan;
+  font-size: 30px;
+  text-align: right;
+   margin-top: -46px;
+   margin-right: 160px;
+   position: inherit;
+  right: 0px;
 
 }
 
 .help {
+width: 50px; 
       text-align: left;
-   margin-top: -20px;
-   margin-left: 200px;
+   margin-top: -53px;
+   margin-left: 1800px;
    position: inherit;
   left: 0px
   }
 
-.block {
-   opacity: 0.1;
-    text-align: left;
-   margin-top: -1090px;
-   margin-left: 0px;
-   position: inherit;
-  left: 0px
-}
-
-.space {
+.degree{
+  opacity: 0.8;
   text-align: left;
-   margin-top: 920px;
-   margin-left: -1445px;
+  margin-top: -55px;
+  margin-left: 1550px;
    position: inherit;
   left: 0px
 }
 
-/*.degree {
-    text-align: left;
-   margin-top: -920px;
-   margin-left: -1445px;
-   position: inherit;
-  left: 0px
+.connect {
+  text-align: left;
+  margin-left: 1700px;
+  margin-top: -95px;
+  position: inherit;
+  left:0px;
 }
-*/
-/*hamburger.css*/
+
+  .space {
+transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+    text-align: right;
+     margin-top: 830px;
+     margin-right: 1705px;
+     position: inherit;
+    right: 0px
+  }
+
+
 
 
 .hamburger {
   position: absolute;
-  margin-top: -1005px;
-  margin-left: 20px;
+  margin-top: -1020px;
+  margin-left: 28px;
   z-index: 2;
   cursor: pointer;
   left: 0px;
@@ -129,34 +147,3 @@
   cursor: pointer;
 }
 
-/*ul.orbit.orbitlistJS, ul.orbit.orbitlistJS ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-ul.orbit.orbitlistJS li {
-  position: absolute;
-  cursor: pointer;
-}*/
-
-/*.orbit li {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  border: 2px solid #000;
-  background: #fff;
-  text-align: center;
-  line-height: 60px;
-}
-
-ul.orbit.orbitlistJS li { transition: all 0.2s linear; }
-
-ul.orbit.orbitlistJS li:hover { background: #4FC2E5; }
-
-.orbit li.orbitlistJS-trace { background: #1ca; }
-
-.orbit li.orbitlistJS-active { background:#46CFB0; }
-
-*/
