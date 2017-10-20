@@ -14,12 +14,23 @@
 						</div>
 					</div>
 				</div>
-					
-				<script>
+					<div id="counter">5</div>
+					<script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.href="https://google.co.th";
+            }
+        }, 1000);
+    </script>
+
+				<!--<script>
        					 setInterval(function() {
        					 	document.querySelector('.enter-button').classList.add('show')
        					 }, 5000);
-   				 </script>
+   				 </script>-->
 			</section>
 	</main>
 	
