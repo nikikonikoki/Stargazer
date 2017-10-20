@@ -1,7 +1,7 @@
 
 .logo  {
    text-align: left; 
-   margin-top: -1057px;
+   margin-top: -930px;
    margin-left: 125px;
    position: inherit;
    left: 0px;
@@ -19,7 +19,7 @@
 .user {
     text-align: left;
    margin-top: -45px;
-   margin-left: 950px;
+   margin-left: 750px;
    position: inherit;
   left: 0px; 
 }
@@ -27,7 +27,7 @@
 .password {
     text-align: left;
    margin-top: -45px;
-   margin-left: 1230px;
+   margin-left: 1020px;
    position: inherit;
   left: 0px;
 }
@@ -57,7 +57,7 @@
 width: 50px; 
       text-align: left;
    margin-top: -53px;
-   margin-left: 1800px;
+   margin-left: 1570px;
    position: inherit;
   left: 0px
   }
@@ -65,18 +65,18 @@ width: 50px;
 .degree{
   opacity: 0.8;
   text-align: left;
-  margin-top: -55px;
-  margin-left: 1550px;
+  margin-top: -120px;
+  margin-left: 1350px;
    position: inherit;
   left: 0px
 }
 
-.connect {
-  text-align: left;
-  margin-left: 1700px;
-  margin-top: -95px;
+.connect{
+  text-align: right;
+  margin-right: 100px;
+  margin-top: -90px;
   position: inherit;
-  left:0px;
+  right: 0px;
 }
 
   .space {
@@ -86,8 +86,8 @@ transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
 -o-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
 -ms-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
     text-align: right;
-     margin-top: 830px;
-     margin-right: 1705px;
+     margin-top: 720px;
+     margin-right: 1500px;
      position: inherit;
     right: 0px
   }
@@ -97,7 +97,7 @@ transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
 
 .hamburger {
   position: absolute;
-  margin-top: -1020px;
+  margin-top: -835px;
   margin-left: 28px;
   z-index: 2;
   cursor: pointer;
@@ -146,4 +146,7 @@ transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
   background: #91966E;
   cursor: pointer;
 }
+
+
+
 
