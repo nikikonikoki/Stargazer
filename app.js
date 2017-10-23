@@ -9,7 +9,7 @@ const homeController = require('./controllers/home.controller')
 const solarSystemController = require('./controllers/solarSystem.controller')
 
 app.get('/', homeController.index)
-app.get('/solar-system', solarSystemController.index)
+app.get('/our-solar-system', solarSystemController.index)
 
 app.use('/assets', express.static(__dirname + '/static/assets', { maxAge: 86400000 }))
 app.use('/images', express.static(__dirname + '/static/images', { maxAge: 86400000 }))

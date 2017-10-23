@@ -12,11 +12,11 @@ body {
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	overflow: hidden;
 }
 
 .header {
 	top: 0;
+	overflow: hidden;
 }
 
 .footer {
@@ -80,4 +80,14 @@ body {
 	padding: 12px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.footer .startup {
+	position: absolute;
+	bottom: 0;
+	transition: bottom 1s linear;
+}
+
+.footer .startup.go-top {
+	bottom: 100vh;
 }
