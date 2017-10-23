@@ -75,6 +75,7 @@ body {
 	border-top: 1px solid white;
 }
 
+
 .footer {
 	background-color: transparent;
 	padding: 12px;
@@ -91,3 +92,18 @@ body {
 .footer .startup.go-top {
 	bottom: 100vh;
 }
+
+.footer .degree {
+	position: absolute;
+	bottom: 0;
+	right: 120px;
+}
+
+.footer .connect {
+	position: absolute;
+	bottom: 16px ;
+	right: 50px;
+
+}
+
+
