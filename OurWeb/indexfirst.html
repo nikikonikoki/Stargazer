@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<title>STARGAZER</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+	<style>
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+</style>
+</head>
+<body>
+	<header>
+		<div id="page-wrapper">
+		</div>
+		<span class="container" onclick="myFunction(this)">
+		  <div class="bar1"></div>
+		  <div class="bar2"></div>
+		  <div class="bar3"></div>
+		 </span>
+		<div id="box">
+        	<div id="items">
+            <a href="#" class="navbar-item">กลุ่มดาวจักรราศี</a>
+			<a href="#" class="navbar-item">ระบบสุริยะ</a>
+			<a href="#" class="navbar-item">กลุ่มดาวที่น่าสนใจ</a>
+			<a href="#" class="navbar-item">ระบบสุริยะของฉัน</a>
+			<a href="#" class="navbar-item"><font face="Nithan" size="10" color="Black">ตั้งค่า</font></a>
+        	</div>
+		</div>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+			<span>
+				<img src="/assets/images/logo.png" alt="" width="60" height="auto">
+			</span>
+			<span class="field has-addons">
+ 	 	  	&emsp;<input class="input" type="text" placeholder="Find a repository">
+ 	 	  		<div class="is-one-third"></div>
+		 		<span class="control">
+ 		 	  	<a class="button is-info">
+ 		  	  	 Search
+ 		 	 	</a>
+		 		</span> &emsp;
+			<div class="field">
+	 	 <p class="control has-icons-left has-icons-right">
+ 		   <input class="input" type="email" placeholder="Email">
+ 		   <span class="icon is-small is-left">
+ 		     <i class="fa fa-envelope"></i>
+ 		   </span> 
+ 		   <span class="icon is-small is-right">
+ 		     <i class="fa fa-check"></i>
+ 		   </span>
+ 		 </p>
+		</div> &nbsp
+		<div class="field">
+	  	<p class="control has-icons-left">
+	    	<input class="input" type="password" placeholder="Password">
+		    <span class="icon is-small is-left">
+		      <i class="fa fa-lock"></i>
+		    </span>
+		  </p>
+		</div> &nbsp
+		<div class="field">
+		  <p class="control">
+	    	<button class="button is-success">
+	    	  Login
+	    	</button>
+		  </p>
+		</div>
+	</header> 
+
+</body>
+</html>
