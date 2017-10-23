@@ -4,19 +4,17 @@
 		<meta charset="UTF-8"> <!-- UTF-8 จะสามารถแสดงภาษาไทยได้ -->
 		<title> STARGAZER </title> <!--ชื่อแท็บแสดงบนเว็บ -->
 		<link rel="stylesheet" type="text/css" href="home.css">
-
+		<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 	</head>
-	    <head>
-	     	<body>
+	<body>
+		<main>
+			<section class="panorama">
 
-            <main>
-		<section class="panorama">
-	       	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-  				<a-scene>
-  		<a-assets>
-    		<img id="panorama" src="page/image/ICON/bg/7.jpg" crossorigin />
-    			</a-assets>
-  					<a-sky src="#panorama" rotation="0 -360 0"></a-sky>
+				<a-scene>
+					<a-assets>
+						<img id="panorama" src="page/image/ICON/bg/7.jpg" crossorigin />
+					</a-assets>
+					<a-sky src="#panorama" rotation="0 -360 0"></a-sky>
 				</a-scene>
 			</div>
 
@@ -24,18 +22,16 @@
 				<img src="page/image/ICON/foot/360-degrees.png " align="right" width="90" height="90">
 			</div>
 
-				<div class="startup">	
-				 <!--<marquee direction ="up" >-->	 
-				 <img src ="page/image/ICON/foot/startup.png" align="right" width="80" height="80" > <!--</marquee>-->
-				</div>
+			<div class="startup">
+				<!--<marquee direction ="up" >-->
+					<img src ="page/image/ICON/foot/startup.png" align="right" width="80" height="80" >
+				<!--</marquee>-->
+			</div>
 
-				<div class="line">
+			<div class="line">
 				<a href="pano.html">
-				  <img src="page/image/ICON/star/line.png" align="right" width="80" height="80">
+					<img src="page/image/ICON/star/line.png" align="right" width="80" height="80">
 				</a>
-
-				</div>	
-	    	</body>
-		</head>
-	       	
+			</div>
+		</body>
 </html>
