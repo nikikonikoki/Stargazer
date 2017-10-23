@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-skeleton",
+  "version": "1.0.0",
+  "description": "nodejs skeleton for cmm221 class",
+  "main": "index.js",
+  "repository": "git@github.com:pakkaparn/nodejs-skeleton.git",
+  "author": "Maetad Sukarausd <maetad91@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "twig": "^1.10.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  }
+}
