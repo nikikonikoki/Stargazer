@@ -1,87 +1,95 @@
-/*home.css*/
 
-.logo  {
-   text-align: left; 
-   margin-top: -82px;
-   margin-left: 100px;
-   position: inherit;
-   left: 0px;
-}
 
-.level-item {
-    text-align: right;
-   margin-top: -90px;
-   margin-right: 900px;
-   position: inherit;
-   right: 0px;
+.search {
+     z-index: 999;
+   margin-top: 35px;
+   margin-left: 250px;
+   position: fixed;
 
 }
 
 .user {
-    text-align: left;
-   margin-top: -90px;
-   margin-left: 950px;
-   position: inherit;
-  left: 0px; 
+     z-index: 999;
+   margin-top: 35px;
+   margin-left: 750px;
+   position: fixed;
 }
+
 .password {
-    text-align: left;
-   margin-top: -45px;
-   margin-left: 1220px;
-   position: inherit;
-  left: 0px;
+     z-index: 999;
+   margin-top: 35px;
+   margin-left: 1000px;
+   position: fixed;
 }
 
-.button{
-   text-align: left;
-   margin-top: -45px;
-   margin-left: 1500px;
-   position: inherit;
-  left: 0px
-
+.logo  {
+   z-index: 999;
+   margin-top: 30px;
+   margin-left: 125px;
+   position: fixed;
 }
 
 .help {
-      text-align: left;
-   margin-top: -20px;
-   margin-left: 200px;
-   position: inherit;
-  left: 0px
+width: 50px; 
+ z-index: 999;
+   margin-top: 30px;
+   margin-left: 1550px;
+   position: fixed;
   }
 
-.block {
-   opacity: 0.1;
-    text-align: left;
-   margin-top: -1090px;
-   margin-left: 0px;
-   position: inherit;
-  left: 0px
+.login {
+  font-family: nithan;
+   z-index: 999;
+  font-size: 30px;
+   margin-top: 30px;
+   margin-left: 1250px;
+   position: fixed;
 }
 
-.space {
-  text-align: left;
-   margin-top: 920px;
-   margin-left: -1445px;
-   position: inherit;
-  left: 0px
+
+.signin{
+  font-family: nithan;
+   z-index: 999;
+  font-size: 30px;
+   margin-top: 30px;
+   margin-left: 1400px;
+   position: fixed;
+
 }
 
-/*.degree {
-    text-align: left;
-   margin-top: -920px;
-   margin-left: -1445px;
-   position: inherit;
-  left: 0px
+  .space {
+transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
+     z-index: 999;
+     margin-top: 650px;
+     margin-left: 70px;
+     position: fixed;
+  }
+
+.degree{
+  opacity: 0.8;
+   z-index: 999;
+  margin-top: 680px;
+  margin-left: 1300px;
+   position: fixed;
 }
-*/
-/*hamburger.css*/
+
+.connect{
+   z-index: 999;
+  margin-left: 1450px;
+  margin-top: 700px;
+  position: fixed;
+}
 
 
 .hamburger {
-  position: absolute;
-  margin-top: -1005px;
-  margin-left: 20px;
-  z-index: 2;
+  position: fixed;
+     z-index: 999;
+  margin-top: 50px;
+  margin-left: 450px;
   cursor: pointer;
   left: 0px;
 }
@@ -129,34 +137,3 @@
   cursor: pointer;
 }
 
-/*ul.orbit.orbitlistJS, ul.orbit.orbitlistJS ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-ul.orbit.orbitlistJS li {
-  position: absolute;
-  cursor: pointer;
-}*/
-
-/*.orbit li {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  border: 2px solid #000;
-  background: #fff;
-  text-align: center;
-  line-height: 60px;
-}
-
-ul.orbit.orbitlistJS li { transition: all 0.2s linear; }
-
-ul.orbit.orbitlistJS li:hover { background: #4FC2E5; }
-
-.orbit li.orbitlistJS-trace { background: #1ca; }
-
-.orbit li.orbitlistJS-active { background:#46CFB0; }
-
-*/

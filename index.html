@@ -1,173 +1,39 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="load.css">
 <html>
 <head>
-<meta charset="utf-8">
-	<title>Web Dev</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="home.css">
-  <link rel="stylesheet" type="text/css" href="function.js">
-  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-  <script type="text/javascript">    $(document).ready(function(){
-  
-  var menu = $(".menu");
-  var hamburger = $(".hamburger");
-  var line = $(".line");
-  var menuOpen;
-  
-  function openMenu(){
-    menu.css("left", "0px" ,  "320px");
-    line.css("background", "#fff" ,  "320px");
-    menuOpen = true;
-  }
-  
-  function closeMenu(){
-    menu.css("left", "-320px");
-    line.css("background", "#fff", );
-    menuOpen = false;
-  }
-  
-  function toggleMenu(){
-    if (menuOpen) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  }
-  
-  hamburger.on({
-    click: function(){
-      toggleMenu();
-    }
-  })
-  
-  
-
-});
-  </script></script>
-	<div class="home">
-<img src="home.png" width="100%" height="100%">	
-</div>
-</head>
+	<title>Stargazer</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
 <body>
-<header>
-<div class="block">
-<img src="123.png" width="2000" >
-</div>
-<div class="logo">
-<img src="logo.png" width="50"></div>
+	<main>
+		<section class="banner">
+			<div class="highlight">
+					<div class="columns is-marginless">
+						<div class="column highlight-item" style="height: 100vh;">
+							
+						</div>
+					</div>
+				</div>
+					<div id="counter">5</div>
+					<script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.href="home.html";
+            }
+        }, 1000);
+    </script>
 
-<nav class="level">
-    <div class="level-item	">
-      <div class="field has-addons">
-        <p class="control">
-          <input class="input" type="text" placeholder="ใส่ตัวหนังสือไอเหี้ย" size="80">
-        </p>
-     
-      </div>
-    </div>
-  </div>
-</nav>
-
-<nav class="user">
-  <div class="field-body">
-      <p class="control">
-        <input class="input is-medium" type="text" placeholder="ชื่อผู้ใช้งาน" size="20">
-      </p>
-    </div>
-  </div>
-</div>
-</nav>
-<nav class="password">
-  <div class="field-body">
-      <p class="control">
-        <input class="input is-medium" type="text" placeholder="รหัสผ่าน" size="20">
-      </p>
-    </div>
-  </div>
-</div>
-</nav>
-
-<a class="button is-medium">
-  สมัครสมาชิก	
-</a>
-<div class="help">
-	<img src="qes.png" class="button">
-</div>
-<div class="space">
-<img src="startup.png" class="button is-large">
-</div>
-
-</header>
-<main>
-  <div class="hamburger">
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-</div>
-<div class="menu">
-  <div class="menu-item">กลุ่มดาวจักรราศี</div>
-  <div class="menu-item">ระบบสุริยะ</div>
-  <div class="menu-item">กลุ่มดาวที่น่าสนใจ</div>
-  <div class="menu-item">ระบบสุริยะของฉัน</div>
-
-</div>
-</main>
+				<!--<script>
+       					 setInterval(function() {
+       					 	document.querySelector('.enter-button').classList.add('show')
+       					 }, 5000);
+   				 </script>-->
+			</section>
+	</main>
+	
 
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-  <link rel="stylesheet" type="text/css" href="home.css">
-    <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
- <script src="orbitlist.js"></script>
-<script type="text/javascript"> jQuery('ul.orbit').orbitlist({
-  onhover: true
-});</script>
-</head>
-<body>
-
-<ul class="orbit">
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-  <li>Item 4
-      <ul>
-          <li>Item 4.1</li>
-          <li>Item 4.2
-              <ul>
-                  <li>4.2.1</li>
-                  <li>4.2.2</li>
-                  <li>4.2.3</li>
-                  <li>4.2.4</li>
-              </ul>
-          </li>
-          <li>Item 4.3
-              <ul>
-                  <li>4.3.1</li>
-                  <li>4.3.2</li>
-                  <li>4.3.3</li>
-              </ul>
-          </li>
-          <li>Item 4.4</li>
-          <li>Item 4.5</li>
-      </ul>
-  </li>
-  <li>Item 5</li>
-  <li>Item 6</li>
-  <li>Item 7
-      <ul>
-          <li>Item 7.1</li>
-          <li>Item 7.2</li>
-      </ul>
-  </li>
-  <li>Item 8</li>
-  <li>Item 9</li>
-</ul>
-</body>
-</html>
- -->
