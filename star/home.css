@@ -9,9 +9,12 @@
    position: absolute;
    z-index: 999;
    left:  60px;
-   bottom: 0;
-   top: 700px;
-   
+   top: calc(100vh - 80px);
+   transition: top 1s linear;
+}
+
+.startup.go-top {
+   top: -80px;
 }
 
 .line {
