@@ -7,14 +7,14 @@
 
 .startup  {
    position: absolute;
-   z-index: 999;
+   z-index: 100;
    left:  60px;
    top: calc(100vh - 80px);
    transition: top 1s linear;
 }
 
 .startup.go-top {
-   top: -80px;
+   top: -10px;
 }
 
 .line {
