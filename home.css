@@ -87,15 +87,16 @@ transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
 
 .hamburger {
   position: fixed;
-     z-index: 999;
-  margin-top: 50px;
-  margin-left: 450px;
+  z-index: 999;
+  margin-top: 45px;
+  margin-left: 50px;
   cursor: pointer;
   left: 0px;
 }
 
 .line {
   width: 50px;
+    z-index: 999;
   height: 6px;
   background: #ffffff;
   margin-bottom: 5px;
@@ -123,6 +124,7 @@ transform: rotate(333deg) scale(1) skew(1deg) translate(0px);
 
 .menu-item {
   font-family: nithan;
+    z-index: 999;
   font-size: 35px;
   margin-left: 100px;
   color: #33FFFF;

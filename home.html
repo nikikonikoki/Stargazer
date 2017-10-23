@@ -11,15 +11,59 @@
 	<link rel="stylesheet" type="text/css" href="home.css">
   <link rel="stylesheet" type="text/css" href="function.js">
   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">    $(document).ready(function(){
+  
+  var menu = $(".menu");
+  var hamburger = $(".hamburger");
+  var line = $(".line");
+  var menuOpen;
+  
+  function openMenu(){
+    menu.css("left", "0px" ,  "320px");
+    line.css("background", "#fff" ,  "320px");
+    menuOpen = true;
+  }
+  
+  function closeMenu(){
+    menu.css("left", "-320px");
+    line.css("background", "#fff", );
+    menuOpen = false;
+  }
+  
+  function toggleMenu(){
+    if (menuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
+  
+  hamburger.on({
+    click: function(){
+      toggleMenu();
+    }
+  })
+  
+  
+
+});
+  </script>
+
 </head>
 <body>
 <header>
-
-
+<section class="panorama">
+            <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+                <a-scene>
+        <a-assets>
+            <img id="panorama" src="home.png" crossorigin />
+                </a-assets>
+                    <a-sky src="#panorama" rotation="0 -360 0"></a-sky>
+                </a-scene>
+            </div>
 <div class="logo">
 <a href="https://www.google.co.th/?gws_rd=cr&dcr=0&ei=txrfWezOEIievQTwyaSgAQ"> <img src="logo.png" width="70"></a>
 </div>
-
 <nav class="search">
   <div class="field-body">
       <p class="control">
@@ -39,7 +83,6 @@
   </div>
 </div>
 </nav>
-
 <nav class="password">
   <div class="field-body">
       <p class="control">
@@ -49,33 +92,26 @@
   </div>
 </div>
 </nav>
-
-<div class="help">
-    <a href="https://www.google.co.th/?gws_rd=cr&dcr=0&ei=txrfWezOEIievQTwyaSgAQ"> <img src="qes.png"></a>
-</div>
-
 <div class="login">
 <a href="https://www.google.co.th/?gws_rd=cr&dcr=0&ei=txrfWezOEIievQTwyaSgAQ"> <font color="white">เข้าสู่ระบบ</font></a>
 </div>
-
 <div class="signin">
   <a href="https://www.google.co.th/?gws_rd=cr&dcr=0&ei=txrfWezOEIievQTwyaSgAQ"> <font color="white">สมัครสมาชิก</font></a>
 </div>
-
+<div class="help">
+	<a href="https://www.google.co.th/?gws_rd=cr&dcr=0&ei=txrfWezOEIievQTwyaSgAQ"> <img src="qes.png"></a>
+</div>
 <div class="space">
   <a href="https://www.google.co.th/?gws_rd=cr&dcr=0&ei=txrfWezOEIievQTwyaSgAQ"><img src="startup.png" width="100"></a>
 </div>
-
 <div class="degree">
 <img src="360.png" width="100">
 </div>
-
 <div class="connect">
   <img src="connect.png" width="70" height="70">
 </div>
-
+</header>
 <main>
-
   <div class="hamburger">
   <div class="line"></div>
   <div class="line"></div>
@@ -88,22 +124,6 @@
   <div class="menu-item"><a href="https://www.facebook.com/?stype=lo&jlou=Aff9gnvWQus4DSPGFFKD2OGA5mTMtOyp7mjg-1fsEmWnkCSHVZArojgJxVOYeRQf3CXuUEH7iL37AheEINU012H3LaUzneTeJqgV7RTOYnnznA&smuh=26102&lh=Ac9oAuQKmiXGI3Pa"> ระบบสุริยะของฉัน </a></div>
 
 </div>
-
-
-
-
-
-
-
-<section class="panorama">
-            <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-                <a-scene>
-        <a-assets>
-            <img id="panorama" src="home.png" crossorigin />
-                </a-assets>
-                    <a-sky src="#panorama" rotation="0 -360 0"></a-sky>
-                </a-scene>
-            </div>
 </main>
 
 </body>
@@ -113,41 +133,6 @@
 
 
 
-<!-- <!DOCTYPE html>
-<html lange = 'en'> 
-    <head>
-        <meta charset="UTF-8"> 
-        <title> STARGAZER </title> 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="home.css">
-  <link rel="stylesheet" type="text/css" href="function.js">
-  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-    </head>
-            <body>
 
-            <main>
-        <section class="panorama">
-                <a-scene>
-        <a-assets>
-            <img id="panorama" src="home.png" crossorigin />
-                </a-assets>
-                    <a-sky src="#panorama" rotation="0 -360 0"></a-sky>
-                </a-scene>
-            </div>
-<div class="logo">
-<a href="https://www.google.co.th/?gws_rd=cr&dcr=0&ei=txrfWezOEIievQTwyaSgAQ"> <img src="logo.png" width="70"></a>
-</div>
-            <div class="icon-360">
-                <img src="360.png " align="right" width="90" height="90">
-            </div>
 
-                <div class="startup">    
-                 <img src ="page/image/ICON/foot/startup.png" align="right" width="80" height="80" > 
-                </div>
-</section>
-             </main> 
-            </body>
-    
-            
-</html> -->
+
