@@ -1,0 +1,83 @@
+html, body {
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+.header,
+.footer {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.header {
+	top: 0;
+}
+
+.footer {
+	bottom: 0;
+}
+
+.header .navbar {
+	background-color: transparent;
+}
+
+.header .navbar .navbar-item {
+	color: white;
+}
+
+.header .navbar a {
+	color: inherit;
+}
+
+.header .navbar .navbar-burger {
+	display: block !important;
+	background-color: transparent;
+	border: none;
+}
+
+.header .navbar .navbar-burger span {
+	background-color: white;
+	height: 3px;
+}
+
+.header .navbar .navbar-burger span:nth-child(1) {
+	margin-top: -8px;
+}
+
+.header .navbar .navbar-burger span:nth-child(3) {
+	margin-top: 6px;
+}
+
+.header .navbar-menu {
+	width: 400px;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	position: relative;
+	transition: left 0.2s linear
+}
+
+.header .navbar-menu:not(.is-active) {
+	left: -400px;
+}
+
+.header .navbar-menu .navbar-item {
+	color: white;
+}
+
+.header .navbar-menu .navbar-item + .navbar-item {
+	border-top: 1px solid white;
+}
+
+.footer {
+	background-color: transparent;
+	padding: 12px;
+	display: flex;
+	justify-content: space-between;
+}

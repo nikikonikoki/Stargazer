@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="load.css">
+<html>
+<head>
+	<title>Stargazer</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+<body>
+	<main>
+		<section class="banner">
+			<div class="highlight">
+					<div class="columns is-marginless">
+						<div class="column highlight-item" style="height: 100vh;">
+							
+						</div>
+					</div>
+				</div>
+					<div id="counter">5</div>
+					<script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.href="home.html";
+            }
+        }, 1000);
+    </script>
+
+				<!--<script>
+       					 setInterval(function() {
+       					 	document.querySelector('.enter-button').classList.add('show')
+       					 }, 5000);
+   				 </script>-->
+			</section>
+	</main>
+	
+
+</body>
+</html>
