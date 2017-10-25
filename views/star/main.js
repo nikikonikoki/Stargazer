@@ -7,13 +7,13 @@ document.querySelector('.navbar-burger').onclick = function(e) {
 	else menu.classList.add('is-active')
 };
 
-document.getElementById('rocket').onclick = function(e) {
+document.getElementById('link').onclick = function(e) {
 	e.preventDefault();
 
-	document.getElementById('rocket').classList.add('go-top');
+	document.getElementById('link').classList.add('click');
 
 	setTimeout(function() {
-		window.location = document.getElementById('rocket').getAttribute('href')
-	}, 1000)
+		window.location = document.getElementById('links).getAttribute('href')
+	}, 
 };
 
