@@ -17,3 +17,7 @@ document.getElementById('rocket').onclick = function(e) {
 	}, 1000)
 };
 
+document.getElementById('link').onclick = function(e) {
+	e.preventDefault();
+	window.location = document.getElementById('link').getAttribute('href')
+};
