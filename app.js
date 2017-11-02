@@ -7,9 +7,11 @@ app.set('view engine', 'twig')
 
 const homeController = require('./controllers/home.controller')
 const solarSystemController = require('./controllers/solarSystem.controller')
+const starsController = require('./controllers/stars.controller')
 
 app.get('/', homeController.index)
 app.get('/our-solar-system', solarSystemController.index)
+app.get('/our-star', starsController.index)
 
 app.use('/assets', express.static(__dirname + '/static/assets', { maxAge: 86400000 }))
 app.use('/images', express.static(__dirname + '/static/images', { maxAge: 86400000 }))
