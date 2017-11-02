@@ -1,3 +1,3 @@
 exports.index = function(req, res) {
-  res.render('my-solar/main.twig')
+  res.render('mysolar/main.twig')
 }
