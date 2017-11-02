@@ -39,7 +39,7 @@ body {
 }
 
 .header .navbar-end .sign-in {
-	color: white; 
+	color: white;
 	position: absolute;
 	left : 1300px;
 	bottom: 18px;
@@ -47,7 +47,7 @@ body {
 }
 
 .header .navbar-end .log-in{
-	color: white; 
+	color: white;
 	position: absolute;
 	left: 1200px;
 	bottom: 18px;
@@ -149,7 +149,6 @@ body {
 	position: absolute;
 	bottom: 16px ;
 	right: 50px;
-	
 }
 
 
