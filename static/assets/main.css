@@ -124,7 +124,7 @@ body {
 
 .footer {
 	background-color: transparent;
-	padding: 12px;
+	padding:  0px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -142,7 +142,7 @@ body {
 .footer .degree {
 	position: absolute;
 	bottom: 0;
-	right: 120px;
+	right: 190px;
 }
 
 .footer .connect {
@@ -151,4 +151,9 @@ body {
 	right: 50px;
 }
 
+.footer .connect1 {
+	position: absolute;
+	bottom: 20px;
+	right:  120px;
+}
 
