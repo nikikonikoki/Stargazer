@@ -157,3 +157,11 @@ body {
 	right:  120px;
 }
 
+.highlight .highlight-item:not(.show) {
+	height: auto;
+background: url(/images/10.jpg) no-repeat center/cover !important;
+}
+
+
+
+
