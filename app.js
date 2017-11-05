@@ -13,7 +13,10 @@ const mysolarController = require('./controllers/mysolar.controller')
 const zodiacController = require('./controllers/zodiac.controller')
 const stargroupController = require('./controllers/stargroup.controller')
 const starlController = require('./controllers/starl.controller')
+<<<<<<< HEAD
 
+=======
+>>>>>>> 30ff4c245e79a90e4ea4f9469573f433c5b14aee
 
 app.get('/', homeController.index)
 app.get('/our-solar-system', solarSystemController.index)
