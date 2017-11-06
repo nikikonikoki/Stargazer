@@ -6,18 +6,19 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
 <body>
-  <main>
-    <section class="banner">
+  <main> 
+    <section class="highlight">
       <div class="highlight">
           <div class="columns is-marginless">
-            <div class="column highlight-item" style="height: 100vh;">
+            <div class="column highlight-item" style ="height: 100vh;">
+              <img src="/images/loading01.gif" width="auto" height="auto">
               <!-- <a class="button is-large enter-button">ENTER</a> -->
             </div>
           </div>
         </div>
           <div id="counter">3</div>
-          <script>
-        setInterval(function() {
+           <script>
+           setInterval(function() {
             var div = document.querySelector("#counter");
             var count = div.textContent * 1 - 1;
             div.textContent = count;
@@ -25,7 +26,7 @@
                 window.location.href="/home";
             }
         }, 1000);
-    </script>
+     </script>
 
         <!--<script>
                  setInterval(function() {

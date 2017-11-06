@@ -165,10 +165,18 @@ body {
 
 .highlight .highlight-item {
   height: auto;
-  background: url(/images/loading01.gif)no-repeat center/coverc!important;
+  width: auto;
+  background: no-repeat center/cover;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/*.fullscreen-block{
+  background: #006699 url('/images/loading01.gif') no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}*/
