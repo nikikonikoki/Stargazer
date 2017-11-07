@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title ?: 'Default title' }}</title>
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="/assets/popup.css">
+  {% block stylesheet %}{% endblock %}
+  <header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+       <button class="button navbar-burger" data-target="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="navbar-start">
+        <a class= "logo" href="/">
+          <img src="/archive/logo.png" width="50" height="50">
+        </a>
+        <div class="navbar-item">
+          <p class="control has-icons-right">
+            <input type="text" name="keywords" class="input" size="50">
+            <span class="icon is-small is-right">
+              <i class="fa fa-search"></i>
+            </span>
+          </p>
+        </div>
+        <div class="user">
+        <p class="control has-icons-left">
+          <input type="text" name="keywords" class="input" size="20">
+            <span class="icon is-small is-left">
+              <i class="fa fa-user"></i>
+            </span>
+        </p>
+      </div>
+      <div class="password">
+        <p class="control has-icons-left">
+          <input type="password" name="keywords" class="input" size="20">
+          <span class="icon is-small is-left">
+            <i class="fa fa-lock"></i>
+          </span>
+          </p>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="log-in">
+        <a href="#">เข้าสู่ระบบ</a>
+      </div>
+      <div class="sign-in">
+        <a href="#">ลงทะเบียน</a>
+      </div>
+      <div class="help">
+        <a href="/help"><img src="/images/qes.png" width="50" height="50"> </a>
+      </div>
+    </div>
+
+
+  </nav>
+
+  <div id="menu" class="navbar-menu">
+    <a class="navbar-item" href="/our-zodiac">กลุ่มดาวจักรราศี</a>
+    <a class="navbar-item" href="/our-solar-system">ระบบสุริยะ</a>
+    <a class="navbar-item" href="/our-star">กลึ่มดาวที่น่าสนใจ</a>
+    <a class="navbar-item" href="/our-mysolar">ระบบสุริยะของฉัน</a>
+    
+  </div>
+</header>
+
+</head>
+<body>
+  <dir class="popup">
+     <img src="/images/popup.jpg" width="1200" height="650">
+  </dir>
+  <dir class="close">
+   <a href="/home">
+    <img src="/images/close.png" width="30" height="30">
+   </a>
+  </dir>
+  {% include 'layout/header.twig' ignore missing %}
+        <section class="panorama">
+    <a-scene>
+      <a-assets>
+      <img id="panorama" src="/images/space1.png" crossorigin />
+    </a-assets>
+      <a-sky src="#panorama" rotation="0 -360 0"></a-sky>
+    </a-scene>
+      
+  </section>
+  {% block content %}{% endblock %}
+  {% include 'layout/footer.twig' ignore missing %}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/assets/main.js"></script>
+  
+  {% block javascript %}{% endblock %}
+  <footer class="footer">
+  <div class="footer-left">
+    <a id="rocket" class="startup" href="/our-solar-system">
+     <img src="/images/startup.png" width="80" height="80">
+    </a>
+  </div>
+  <div class="footer-right">
+    <a class="degree" >
+      <img src="/images/360-degrees.png" width="60" height="60">
+    </a>
+  </div>
+    <div class="footer-right">
+      <a class="connect" href="/our-starline">
+      <img src="/images/connect.png" width="50" height="50">
+    </a>
+    </div>
+      <div class="footer-right">
+        <a class = "connect1" href="/our-stargroup">
+        <img src="/images/connect1.png" width="50" height="50">
+        </a> 
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
