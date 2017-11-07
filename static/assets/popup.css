@@ -1,0 +1,13 @@
+.popup {
+	position: fixed;
+	left: 200px;
+	top: 80px;
+	z-index: 99;
+}
+
+.close {
+	position:  fixed;
+	left: 1390px;
+	top: 60px;
+z-index: 999;
+}
