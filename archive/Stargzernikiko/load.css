@@ -6,7 +6,8 @@
 
 .highlight .highlight-item {
   height: auto;
-  background: url(/image/loading01.gif) no-repeat center/cover;
+  width: 1000px ;
+  background: no-repeat center/cover;
   color: #ffffff;
   display: flex;
   justify-content: center;

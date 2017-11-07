@@ -157,6 +157,12 @@ body {
 	right:  120px;
 }
 
+.footer.trian {
+	position: absolute;
+	bottom: 0;
+	right: 180px;
+}
+
 .highlight {
   margin-bottom: 0 !important;
   margin-right: 0 !important;
@@ -164,8 +170,8 @@ body {
 }
 
 .highlight .highlight-item {
-  height: auto;
-  width: auto;
+  width: 1000vw;
+  height: 1000vh;	
   background: no-repeat center/cover;
   color: #ffffff;
   display: flex;

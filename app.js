@@ -15,17 +15,6 @@ const stargroupController = require('./controllers/stargroup.controller')
 const starlController = require('./controllers/starl.controller')
 const loadController = require('./controllers/load.controller')
 
- 
-
-// app.get('/', homeController.index)
-// app.get('/our-solar-system', solarSystemController.index)
-// app.get('/our-star', starsController.index)
-// app.get('/our-mysolar', mysolarController.index)
-// app.get('/our-zodiac',zodiacController.index)
-// app.get('/our-stargroup',stargroupController.index)
-// app.get('/our-starline',starlController.index)
-// app.get('/our-load',loadController.index)
-
 
 app.get('/home', homeController.index)
 app.get('/our-solar-system', solarSystemController.index)
