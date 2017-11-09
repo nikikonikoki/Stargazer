@@ -157,12 +157,13 @@ body {
 	right:  120px;
 }
 
-.footer.trian {
+/*.footer.trian {
 	position: absolute;
-	bottom: 0;
-	right: 180px;
+	bottom: 0px;
+	right: 150px;
+	z-index: 99;
 }
-
+*/
 .highlight {
   margin-bottom: 0 !important;
   margin-right: 0 !important;
@@ -170,8 +171,6 @@ body {
 }
 
 .highlight .highlight-item {
-  width: 1000vw;
-  height: 1000vh;	
   background: no-repeat center/cover;
   color: #ffffff;
   display: flex;
@@ -179,6 +178,8 @@ body {
   align-items: center;
 }
 
+
+	
 /*.fullscreen-block{
   background: #006699 url('/images/loading01.gif') no-repeat;
   -webkit-background-size: cover;
