@@ -157,13 +157,12 @@ body {
 	right:  120px;
 }
 
-/*.footer.trian {
+.trian.trians {
 	position: absolute;
 	bottom: 0px;
-	right: 150px;
-	z-index: 99;
+	right: 200px;
 }
-*/
+
 .highlight {
   margin-bottom: 0 !important;
   margin-right: 0 !important;
