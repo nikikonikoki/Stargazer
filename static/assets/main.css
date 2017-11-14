@@ -164,56 +164,62 @@ body {
 }
 
 .body {
+	position: fixed;
 	bottom: 0;
 }
 
 
 .body .smallbear {
-	position: absolute;
+	position: fixed;
 	top: 400px;
 	left: 90px;
 	z-index: 999; 
 }
 
 .body .bigbear {
-	position: absolute;
+	position: fixed;
 	top: 120px;
 	left: 300px;
 	z-index:999;
 }
 
 .body .bat {
-	position: absolute;
+	position: fixed;
 	top: 550px;
 	left: 400px;
 	z-index:999;
 }
 
 .body .nai-pran {
-	position: absolute;
+	position: fixed;
 	top: 300px;
 	left: 700px;
 	z-index:999;
 }
 
 .body .nucket {
-	position: absolute;
+	position: fixed;
 	top: 100px;
 	left: 1000px;
 	z-index:999;
 }
 
 .body .pegasus {
-	position: absolute;
+	position: fixed;
 	top: 400px;
 	left: 1200px;
 	z-index:999;
 }
 
-.highlight {
+/*.highlight {
   margin-bottom: 0 !important;
   margin-right: 0 !important;
   margin-left: 0 !important;
+}*/
+
+.highlight .highlight-item {
+	position: fixed;
+	bottom: 0;
 }
 
 .highlight .highlight-item {
