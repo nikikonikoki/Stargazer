@@ -3,13 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ title ?: 'Default title' }}</title>
-
-
-  <meta name="viewport" content="width=device-width">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
   {% block stylesheet %}{% endblock %}
@@ -17,19 +12,12 @@
 <body>
   
   {% include 'layout/header.twig' ignore missing %}
-        <section class="panorama">
-    <a-scene>
-      <a-assets>
-      <img id="panorama" src="/images/space2.jpg" crossorigin />
-    </a-assets>
-
-      <a-sky src="#panorama" rotation="0 -360 0">
-        </a-sky>
-    </a-scene>
-       
-  </section>
+      <div class="body"> 
+      <img src="/images/space1.png" >
+      </div>
+ 
   {% block content %}{% endblock %}
-  {% include 'layout/foots.twig' ignore missing %}
+  {% include 'layout/footer.twig' ignore missing %}
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="/assets/main.js"></script>

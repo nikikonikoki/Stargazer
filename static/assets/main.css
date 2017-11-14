@@ -157,6 +157,12 @@ body {
 	right:  120px;
 }
 
+.footer .teles {
+	position: absolute;
+	bottom: 10px;
+	right: 850px;
+}
+
 .highlight {
   margin-bottom: 0 !important;
   margin-right: 0 !important;
@@ -171,55 +177,10 @@ body {
   align-items: center;
 }
 
-
-
-
-.footers {
+.body {
 	position: fixed;
-	width: 100%;
-	z-index: 10;
-}
-.footers {
-	bottom: 0;
-}
-.footers {
-	background-color: transparent;
-	padding:  0px;
-	display: flex;
-	justify-content: space-between;
-}
-/*.highlight {
-  margin-bottom: 0 !important;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
 }
 
-.highlight .highlight-item {
-  background: no-repeat center/cover;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-.footers .startup {
-	position: absolute;
-	bottom: 0;
-	transition: bottom 1s linear;
-}
-
-.footers .startup.go-top {
-	bottom: 100vh;
-}
-.footers.trian {
-	position: absolute;
-	bottom: 0px;
-	right: 100px;
-}
-.footers .connect1s {
-	position: absolute;
-	bottom: 0px;
-	right: 10px;
-}
 
 
 	
