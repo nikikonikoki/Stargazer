@@ -13,11 +13,22 @@
   
   {% include 'layout/header.twig' ignore missing %}
       <div class="body"> 
-      <img src="/images/space1.png" >
+         <a class="space1"></a>
+        <img src="/images/space1.png">
+         </a>
       </div>
+
+      <!-- <div class="body-N">
+        <a class="Smalls" href="#">
+          <img src="/images/smallbear.png.jpg">
+        </a>
+      </div> -->
+
+
  
   {% block content %}{% endblock %}
   {% include 'layout/footer.twig' ignore missing %}
+  {%  include 'layout/body.twig' ignore missing %}
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="/assets/main.js"></script>
