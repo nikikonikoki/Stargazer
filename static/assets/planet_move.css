@@ -1,0 +1,138 @@
+/*.dot{
+    position:absolute;
+    top:0;
+    left:0;
+    width:50px;
+    height:50px;
+    background:red;
+    border-radius:50%;
+}
+.MoveCircle{/*Moving a div along a circular path using HTML/JavaScript/CSS
+
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    top:50px;
+    left:50px;
+}*/
+
+@-webkit-keyframes orbit { 
+from { -webkit-transform:rotate(0deg) } 
+to { -webkit-transform:rotate(360deg) } 
+}
+
+@-webkit-keyframes orbitReverse { 
+from { -webkit-transform:rotate(360deg) } 
+to { -webkit-transform:rotate(0deg) } 
+}
+
+
+.MoveMercury{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:14%;
+    height:14%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    top:43%;
+    left:43%;
+}
+.MoveVenus{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:20%;
+    height:20%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:10s;
+    top:40%;
+    left:40%;
+}
+.MoveEarth{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:24%;
+    height:24%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:15s;
+    top:38%;
+    left:38%;
+}
+.MoveMars{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:30%;
+    height:30%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:25s;
+    top:35%;
+    left:35%;
+}
+.MoveJupiter{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:44%;
+    height:44%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:70s;
+    top:28%;
+    left:28%;
+}
+.MoveSaturn{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:56%;
+    height:56%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:176s;
+    top:22%;
+    left:22%;
+}
+.MoveUranus{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:68%;
+    height:68%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:252s;
+    top:16%;
+    left:16%;
+}
+.MoveNeptune{/*Moving a div along a circular path using HTML/JavaScript/CSS
+*/
+    width:80%;
+    height:80%;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:494s;
+    top:10%;
+    left:10%;
+}
+
+.StaticSun{/*How to align a <div> to the middle (horizontally/width) of the page*/
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	top: 39%;/*Change by size*/
+	left: 45%;
+
+}
