@@ -190,6 +190,20 @@ body {
 	z-index: 999;
 }
 
+.bear .naip {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.bear .nucket {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
 .body .smallbear {
 	position: fixed;
 	top: 400px;

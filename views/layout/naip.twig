@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title ?: 'Default title' }}</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/assets/main.css">
+  {% block stylesheet %}{% endblock %}
+</head>
+<body>
+  
+  {% include 'layout/header.twig' ignore missing %}
+      
+      <bear class = "bear">
+
+      <div class="bear"> 
+         <a class="space1"></a>
+          <img src="/images/space1.png">
+         </a>
+      </div>    
+         <a class="naip">
+          <img src="/images/Nais.jpg" width="800" height="800">
+         </a>
+      </bear>
+ 
+  {% block content %}{% endblock %}
+  {% include 'layout/footer.twig' ignore missing %}
+  
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/assets/main.js"></script>
+  
+  {% block javascript %}{% endblock %}
+</body>
+</html>
