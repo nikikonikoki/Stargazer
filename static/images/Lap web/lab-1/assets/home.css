@@ -1,8 +1,0 @@
-header.navbar-tabs {
-  justify-content: center; <!--การจัดการข้อความให้อยู่ตรงกลางกรณีที่หาโค้ดไม่เจอ-->
-}
-
-.highlight .highlight-item {
-  height: 416px;
-  background: url(/assets/images/home/banner/highlight.jpg) no-repeat center/cover;
-}

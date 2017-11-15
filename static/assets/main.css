@@ -8,10 +8,10 @@ body {
 	min-height: 100%;
 }
 .header,
-.footer {
+.footer{
 	position: fixed;
 	width: 100%;
-	z-index: 10;
+	z-index: 5;
 }
 
 .header .navbar{
@@ -157,3 +157,129 @@ body {
 	right:  120px;
 }
 
+.footer .teles {
+	position: absolute;
+	bottom: 10px;
+	right: 850px;
+}
+
+.bear.space1 {
+	position:absolute;
+	bottom: 0;
+	
+}
+
+.bear .small {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.bear .big {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.bear .bat {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.bear .naip {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.bear .nucket {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.bear .pica {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.body .smallbear {
+	position: fixed;
+	top: 400px;
+	left: 90px;
+	z-index: 999; 
+}
+
+.body .bigbear {
+	position: fixed;
+	top: 120px;
+	left: 300px;
+	z-index:999;
+}
+
+.body .bat {
+	position: fixed;
+	top: 550px;
+	left: 400px;
+	z-index:999;
+}
+
+.body .nai-pran {
+	position: fixed;
+	top: 300px;
+	left: 700px;
+	z-index:999;
+}
+
+.body .nucket {
+	position: fixed;
+	top: 100px;
+	left: 1000px;
+	z-index:999;
+}
+
+.body .pegasus {
+	position: fixed;
+	top: 400px;
+	left: 1200px;
+	z-index:999;
+}
+
+/*.highlight {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}*/
+
+.highlight .highlight-item {
+	position: fixed;
+	bottom: 0;
+}
+
+.highlight .highlight-item {
+  background: no-repeat center/cover;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+	
+/*.fullscreen-block{
+  background: #006699 url('/images/loading01.gif') no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}*/

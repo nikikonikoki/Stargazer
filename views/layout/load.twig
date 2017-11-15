@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title ?: 'Default title' }}</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+<body>
+  <main> 
+    
+      <div class="highlight">
+            <a class="highlight-item">
+              <img src="/images/loading01.gif" width="2000"  height="1000">
+              <!-- <a class="button is-large enter-button">ENTER</a> -->
+            </a>
+      </div>
+          <div id="counter">3</div>
+           <script>
+           setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.href="/home";
+            }
+        }, 1000);
+     </script>
+
+        <!--<script>
+                 setInterval(function() {
+                  document.querySelector('.enter-button').classList.add('show')
+                 }, 5000);
+           </script>-->
+      
+  </main>
+  
+
+</body>
+</html>
