@@ -17,7 +17,8 @@ const loadController = require('./controllers/load.controller')
 const helpController = require('./controllers/help.controller')
 const inforController = require('./controllers/infor.controller')
 const smallbController = require('./controllers/smallb.controller')
-
+const bigbController = require('./controllers/bigb.controller')
+const batController = require('./controllers/bat.controller')
 
 
 app.get('/home', homeController.index)
@@ -31,6 +32,9 @@ app.get('/',loadController.index)
 app.get('/help',helpController.index)
 app.get('/information',inforController.index)
 app.get('/smallbear',smallbController.index)
+app.get('/bigbear',bigbController.index)
+app.get('/bat',batController.index)
+
 
 app.use('/assets', express.static(__dirname + '/static/assets', { maxAge: 86400000 }))
 app.use('/images', express.static(__dirname + '/static/images', { maxAge: 86400000 }))

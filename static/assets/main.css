@@ -176,6 +176,20 @@ body {
 	z-index: 999;
 }
 
+.bear .big {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
+.bear .bat {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
+
 .body .smallbear {
 	position: fixed;
 	top: 400px;
