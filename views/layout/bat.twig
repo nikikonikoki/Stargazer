@@ -19,11 +19,18 @@
          <a class="space1"></a>
           <img src="/images/space1.png">
          </a>
-      </div>    
+      </div> 
+
          <a class="bat">
-          <img src="/images/BATs.jpg" width="800" height="800">
-         </a>
-      </bear>
+           <!-- <img src="/images/BATs.jpg" width="800" height="800">
+         <a href="/bat"> --><img src="/images/BATs.jpg" width="800" height="800" 
+        onmouseover="this.src='/images/BATs full.jpg'"  onmouseout
+        ="this.src='/images/BATs.jpg'" /></a>
+          </a>
+      </bear> 
+
+      
+ 
  
   {% block content %}{% endblock %}
   {% include 'layout/footer.twig' ignore missing %}

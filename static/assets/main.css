@@ -164,7 +164,7 @@ body {
 }
 
 .bear.space1 {
-	position:absolute;
+	position:fixed;
 	bottom: 0;
 	
 }
