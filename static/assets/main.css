@@ -11,7 +11,7 @@ body {
 .footer{
 	position: fixed;
 	width: 100%;
-	z-index: 10;
+	z-index: 5;
 }
 
 .header .navbar{
@@ -163,11 +163,18 @@ body {
 	right: 850px;
 }
 
-.body {
-	position: fixed;
+.bear.space1 {
+	position:absolute;
 	bottom: 0;
+	
 }
 
+.bear .small {
+	position: fixed;
+	bottom: 100px;
+	left:  400px;
+	z-index: 999;
+}
 
 .body .smallbear {
 	position: fixed;
