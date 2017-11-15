@@ -21,6 +21,8 @@ const bigbController = require('./controllers/bigb.controller')
 const batController = require('./controllers/bat.controller')
 const naipController = require('./controllers/naip.controller')
 const nucketController = require('./controllers/nucket.controller')
+const picaController = require('./controllers/pica.controller')
+
 
 app.get('/home', homeController.index)
 app.get('/our-solar-system', solarSystemController.index)
@@ -37,6 +39,7 @@ app.get('/bigbear',bigbController.index)
 app.get('/bat',batController.index)
 app.get('/nai-pran',naipController.index)
 app.get('/Look-kai',nucketController.index)
+app.get('/Pigasus',picaController.index)
 
 app.use('/assets', express.static(__dirname + '/static/assets', { maxAge: 86400000 }))
 app.use('/images', express.static(__dirname + '/static/images', { maxAge: 86400000 }))
