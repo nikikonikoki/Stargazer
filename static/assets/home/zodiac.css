@@ -1,0 +1,87 @@
+.one {
+	position: inherit;
+	left: 510px;
+	bottom: -125px;
+	z-index: 99;
+}
+
+.two {
+	position: inherit;
+	left: 605px;
+	bottom: -80px;
+	z-index: 99;
+}
+
+.tree {
+	position: inherit;
+	left: 680px;
+	bottom: -80px;
+	z-index: 99;
+}
+
+
+.four {
+	position: inherit;
+	left: 705px;
+	bottom: -110px;
+	z-index: 99;
+}
+
+
+.five {
+	position: inherit;
+	left: 675px;
+	bottom: -135px;
+	z-index: 99;
+}
+
+.six {
+	position: inherit;
+	left: 600px;
+	bottom: -130px;
+	z-index: 99;
+}
+
+
+.seven {
+	position: inherit;
+	left: 510px;
+	bottom:  -90px;
+	z-index: 109;
+}
+
+.eight {
+	position: inherit;
+	right: -420px;
+	top: -10px;
+	z-index: 99;
+}
+
+.nine {
+	position: inherit;
+	left: 350px;
+	top: -145px;
+	z-index: 99;
+}
+
+.ten {
+	position: inherit;
+	left: 320px;
+	top: -310px;
+	z-index: 99;
+}
+
+.eleven {
+	position: inherit;
+	left: 340px;
+	top: -480px;
+	z-index: 99;
+}
+
+.twelve {
+	position: inherit;
+	left: 415px;
+	top: -625px;
+	z-index: 99;
+}
+
