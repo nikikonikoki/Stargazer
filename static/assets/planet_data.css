@@ -12,7 +12,7 @@
 .cellbgcolor{
   
   /*background-color: #b1d780;*/
-  background-color: yellow;
+  background-color: #F4A028;
 
 }
 
@@ -20,7 +20,7 @@
 .textbox{
   border-radius: 15px 50px 30px 5px;
   /*  background: #b1d780;*/
-    background: yellow;
+    background: #F4A028;
     padding: 20px;
     width: auto;
     height: auto ;  
@@ -31,7 +31,7 @@
  .textboxheader{
   border-radius: 30px ;
   /*  background: #b1d780;*/
-    background: yellow;
+    background: #F4A028;
     padding: 20px;
     width: auto;
     height: auto ;  
@@ -47,31 +47,3 @@
   margin-top: 20%;
 }
 
-.cellbgcolor{
-  
-  /*background-color: #b1d780;*/
-  background-color: yellow;
-
-}
-
-
-.textbox{
-  border-radius: 15px 50px 30px 5px;
-  /*  background: #b1d780;*/
-    background: yellow;
-    padding: 20px;
-    width: auto;
-    height: auto ;  
-    margin: 20px;
- }
-
-
- .textboxheader{
-  border-radius: 30px ;
-  /*  background: #b1d780;*/
-    background: yellow;
-    padding: 20px;
-    width: auto;
-    height: auto ;  
-    margin: 20px;
- }
