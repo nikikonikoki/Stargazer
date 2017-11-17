@@ -4,7 +4,41 @@
 
 .MessageParagraph{
 	font-size: 24px;
+	color: #000000;
+
+
 }
+
+.cellbgcolor{
+	
+	/*background-color: #b1d780;*/
+	background-color: yellow;
+
+}
+
+
+.textbox{
+	border-radius: 15px 50px 30px 5px;
+  /* 	background: #b1d780;*/
+  	background: yellow;
+   	padding: 20px;
+  	width: auto;
+  	height: auto ;  
+  	margin: 20px;
+ }
+
+
+ .textboxheader{
+	border-radius: 30px ;
+  /* 	background: #b1d780;*/
+  	background: yellow;
+   	padding: 20px;
+  	width: auto;
+  	height: auto ;  
+  	margin: 20px;
+ }
+
+
 
 .PictureShow{
 	width: 55%;
