@@ -55,8 +55,8 @@ body {
 
 .navbar-end .help {
 	position: absolute;
-	right: 200px;
-	bottom: 8px;
+	right: 100px;
+	top: 25px;
 }
 
 .header .navbar a {
@@ -160,7 +160,7 @@ body {
 .footer .teles {
 	position: absolute;
 	bottom: 10px;
-	right: 850px;
+	right: 120px;
 }
 
 .bear.space1 {
@@ -185,7 +185,7 @@ body {
 
 .bear .bat {
 	position: fixed;
-	bottom: 100px;
+	top: 100px;
 	left:  400px;
 	z-index: 999;
 }
@@ -213,43 +213,43 @@ body {
 
 .body .smallbear {
 	position: fixed;
-	top: 400px;
-	left: 90px;
+	top:350px;
+	left: 1000px;
 	z-index: 999; 
 }
 
 .body .bigbear {
 	position: fixed;
-	top: 120px;
-	left: 300px;
+	top: 100px;
+	left: 1300px;
 	z-index:999;
 }
 
 .body .bat {
 	position: fixed;
-	top: 550px;
-	left: 400px;
+	top: 100px;
+	left: 700px;
 	z-index:999;
 }
 
 .body .nai-pran {
 	position: fixed;
-	top: 300px;
-	left: 700px;
+	top: 500px;
+	left: 800px;
 	z-index:999;
 }
 
 .body .nucket {
 	position: fixed;
-	top: 100px;
-	left: 1000px;
+	top: 400px;
+	left: 500px;
 	z-index:999;
 }
 
 .body .pegasus {
 	position: fixed;
-	top: 400px;
-	left: 1200px;
+	top: 250px;
+	left: 100px;
 	z-index:999;
 }
 
