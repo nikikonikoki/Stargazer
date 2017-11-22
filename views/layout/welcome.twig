@@ -9,12 +9,43 @@
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
   {% block stylesheet %}{% endblock %}
 </head>
-<body>
-  
-  
-      
-          
-          <img src="/images/galaxy1.jpg">
+<body> 
+             <text class = "text">
+          <div class="welcome">
+            <h1>WELCOME TO WEBSITE</h1>
+          <div class="star">
+            <h1>STARGAZER</h1>
+          </div>  
+
+             <img src="/images/galaxy1.jpg"> 
+          <style name="captain" type="text/css">
+              .welcome:hover{
+              -webkit-transform:scale(1.1);
+              transform:scale(1.1);
+                        }
+              .welcome:hover{
+              overflow:hidden;
+                        }
+              .welcome{
+              -webkit-transition: all 1.0s ease;
+              transition: all 1.0s ease;
+                  }
+          </style>
+          </div>
+
+
+
+          <!-- <div id="counter">3</div> -->
+           <script>
+     //       setInterval(function() {
+     //        var div = document.querySelector("#counter");
+     //        var count = div.textContent * 1 - 1;
+     //        div.textContent = count;
+     //        if (count <= 0) {
+     //            window.location.href="/home";
+     //        }
+     //    }, 1000);
+     // </script>
         
  
   {% block content %}{% endblock %}

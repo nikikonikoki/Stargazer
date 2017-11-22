@@ -271,3 +271,36 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.text .welcome h1 {
+	position: absolute;
+	color: white;
+	font-size: 80px;
+	bottom: 500px;
+	left: 400px;
+}	
+
+.text .star h1 {
+	position: absolute;
+	color: gray;
+	
+	font-size: 100px;
+	bottom: 400px;
+	left: 800px;
+}	
+
+.text .welcome {
+	background-image: url(/images/galaxy1.jpg);	
+}
+
+			/*   img:hover{
+              -webkit-transform:scale(1.1);
+              transform:scale(1.1);
+                        }
+              img:hover{
+              overflow:hidden;
+                        }
+              img{
+              -webkit-transition: all 1.0s ease;
+              transition: all 1.0s ease;
+                  }*/
