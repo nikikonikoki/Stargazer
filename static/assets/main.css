@@ -282,11 +282,10 @@ body {
 	bottom: 600px;
 	left: 300px;
 
-	/*font: bold 300% Consolas, Monaco, monospace;*/
-    border-right: .1em solid black;
+	
+    border-right: .1em solid pink;
     width: 16.5em; 
     width: 21ch;
-   /* margin: 2em 1em;*/
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 2s steps(21, end),
@@ -308,9 +307,15 @@ body {
 .text .click {
 	position: fixed;
 	font-size: 50px;
-	/*color: black;*/
 	top: 600px;
 	left: 700px;
+	color: pink;
+    width: 16.5em; 
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(21, end),
+    blink-caret .5s step-end infinite alternate;
 }
 
 /*.button1 .button {
