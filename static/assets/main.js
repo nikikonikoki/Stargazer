@@ -18,3 +18,8 @@ document.getElementById('rocket').onclick = function(e) {
 };
 
 
+$(document).ready(function() {
+  
+  $('.big').arctext({radius: 200});
+  
+});

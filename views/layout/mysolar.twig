@@ -8,20 +8,21 @@
 
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
   {% block stylesheet %}{% endblock %}
+
 </head>
 <body>
   
   {% include 'layout/header.twig' ignore missing %}
-      
-      <bear class = "bear">
-
-      <div class="bear"> 
-         <a class="space1">
-          <img src="/images/galaxy1.jpg">
+      <div class="body"> 
+          <a class="space1"></a>
+        <img src="/images/galaxy1.jpg">
          </a>
-      </div>    
+      </div>
 
-      </bear>
+
+
+      
+
  
   {% block content %}{% endblock %}
   {% include 'layout/footer.twig' ignore missing %}

@@ -148,67 +148,37 @@ body {
 .footer .connect {
 	position: absolute;
 	bottom: 16px ;
-	right: 50px;
-}
-
-.footer .connect1 {
-	position: absolute;
-	bottom: 20px;
-	right:  120px;
+	right: 120px;
 }
 
 .footer .teles {
 	position: absolute;
 	bottom: 10px;
-	right: 120px;
-}
-
-.bear.space1 {
-	position:fixed;
-	bottom: 0;
-	
+	right: 50px;
 }
 
 .bear .small {
-	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	
 }
 
 .bear .big {
-	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	
 }
 
 .bear .bat {
-	position: fixed;
-	top: 100px;
-	left:  400px;
-	z-index: 999;
+	
 }
 
 .bear .naip {
-	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	
 }
 
 .bear .nucket {
-	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	
 }
 
 .bear .pica {
-	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	
 }
 
 .body .smallbear {
@@ -218,11 +188,27 @@ body {
 	z-index: 999; 
 }
 
+.body .smallbear h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 470px;
+	left: 1100px;
+}
+
 .body .bigbear {
 	position: fixed;
 	top: 100px;
 	left: 1300px;
 	z-index:999;
+}
+
+.body .bigbear h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 440px;
+	left: 1400px;
 }
 
 .body .bat {
@@ -232,11 +218,27 @@ body {
 	z-index:999;
 }
 
+.body .bat h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 650px;
+	left: 880px;
+}
+
 .body .nai-pran {
 	position: fixed;
-	top: 500px;
+	top: 450px;
 	left: 800px;
 	z-index:999;
+}
+
+.body .nai-pran h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 230px;
+	left: 970px;
 }
 
 .body .nucket {
@@ -246,6 +248,13 @@ body {
 	z-index:999;
 }
 
+.body .nucket h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 230px;
+	left: 520px;
+}
 .body .pegasus {
 	position: fixed;
 	top: 250px;
@@ -253,11 +262,32 @@ body {
 	z-index:999;
 }
 
-/*.highlight {
-  margin-bottom: 0 !important;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}*/
+.body .pegasus h1{
+position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 580px;
+	left: 190px;
+}
+
+.body .text1  h1 {
+	position: fixed;
+	bottom: 0px;
+	left: 600px;
+	color: white;
+	margin: 0.5em 0;
+	font-size: 4em;
+  	color: #22313F ;
+  	text-align: center;
+  	text-transform: uppercase;
+  	letter-spacing: 0.03em;
+  	text-shadow: -0.02em 0 0 #F22613,  0.02em 0 0 #00FFFF;
+}
+
+.body .text1  {
+	position: fixed;
+	background-image: url(/images/galaxy1.jpg);	
+}
 
 .highlight .highlight-item {
 	position: fixed;
@@ -318,17 +348,5 @@ body {
     blink-caret .5s step-end infinite alternate;
 }
 
-/*.button1 .button {
-	align-items: center;
-	width: 300px;
-  	padding: 20px;
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 150%;
-	background: black;
-	color: #fff;
-	border: 1px solid #3366cc;
-	border-radius: 10px;
-}*/
 
 
