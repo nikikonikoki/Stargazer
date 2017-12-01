@@ -161,8 +161,27 @@ body {
 	
 }
 
-.bear .big {
-	
+.bear .big  {
+	position: fixed;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+.bear .big1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .big2 {
+	position: fixed;
+	color: white;
+	bottom: 200px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .bat {
@@ -170,7 +189,6 @@ body {
 }
 
 .bear .naip {
-	
 }
 
 .bear .nucket {
@@ -263,7 +281,7 @@ body {
 }
 
 .body .pegasus h1{
-position: fixed;
+	position: fixed;
 	color: white ;
 	font-size: 30px;
 	bottom: 580px;
@@ -274,20 +292,18 @@ position: fixed;
 	position: fixed;
 	bottom: 0px;
 	left: 600px;
-	color: white;
 	margin: 0.5em 0;
 	font-size: 4em;
-  	color: #22313F ;
+  	color: yellow ;
   	text-align: center;
   	text-transform: uppercase;
-  	letter-spacing: 0.03em;
-  	text-shadow: -0.02em 0 0 #F22613,  0.02em 0 0 #00FFFF;
 }
 
 .body .text1  {
 	position: fixed;
 	background-image: url(/images/galaxy1.jpg);	
 }
+
 
 .highlight .highlight-item {
 	position: fixed;

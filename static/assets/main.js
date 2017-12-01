@@ -17,9 +17,3 @@ document.getElementById('rocket').onclick = function(e) {
 	}, 1000)
 };
 
-
-$(document).ready(function() {
-  
-  $('.big').arctext({radius: 200});
-  
-});
