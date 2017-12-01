@@ -50,7 +50,7 @@ to { -webkit-transform:rotate(0deg) }
     position:absolute;
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
-    -webkit-animation-name:orbitReverse;
+    -webkit-animation-name:orbit;
     -webkit-animation-duration:10s;
     top:40%;
     left:40%;
@@ -110,7 +110,7 @@ to { -webkit-transform:rotate(0deg) }
     position:absolute;
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
-    -webkit-animation-name:orbitReverse;
+    -webkit-animation-name:orbit;
     -webkit-animation-duration:252s;
     top:16%;
     left:16%;
