@@ -158,7 +158,26 @@ body {
 }
 
 .bear .small {
-	
+	position: fixed;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+.bear .small1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .small2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .big  {
@@ -179,24 +198,101 @@ body {
 .bear .big2 {
 	position: fixed;
 	color: white;
-	bottom: 200px;
+	bottom: 150px;
 	left: 750px;
 	font-size: 30px;
 }
 
 .bear .bat {
-	
+	position: fixed;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+.bear .bat1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .bat2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .naip {
+	position: fixed;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+.bear .naip1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .naip2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .nucket {
-	
+	position: fixed;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+
+.bear .nucket1 {
+	position: fixed;
+	color: white;
+	bottom: 450px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .nucket2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .pica {
-	
+	position: fixed;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+.bear .pica1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .pica2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .body .smallbear {
