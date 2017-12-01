@@ -11,15 +11,313 @@
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/planet_move.css">
+  <link rel="stylesheet" type="text/css" href="/assets/planet_dataVer2.css">
   {% block stylesheet %}{% endblock %}
 </head>
 <body>
   {% include 'layout/header.twig' ignore missing %}
       
-  <section class="section" style="background-image: url(/images/space1.png);width: 100%;height: 100vh;position:absolute;">
+  <section class="section" style="background-image: url(/images/galaxy1.jpg);width: 100%;height: auto;position:absolute;">
     <main>
+      <div class="columns" style= "width: 100%; height: auto;" > 
+
+      <div class="column is-one-quarter" style="width: 360px; height: auto; margin: 150px 0 150px 300px;">
+        <a href="/our-solar-system"><img src="/images/toon_earth.png" style="width: 360px; height: auto; "></a>
+        
+      </div> 
+
+      <div class="column has-text-centered">
+        <div class="container has-text-left" style="  margin: 150px 360px 100px 0; color:white;"> 
+            <h2 style="font-size: 150px  ">Earth</h2><br>
+            <h3 style="font-size: 100px">โลก</h3>
+          </div>
+        
+      </div>
+  
+      </div> <!--header-->
+
+
+      <div class="columns" style= "width: 100%; height: auto; " >
+        <div class="container has-text-centered" style="width: 100px; height: auto; " >   <!-- picture column -->
+          <img src="/images/scroll-down.png" style="width: 100px; height: auto; ">  
+          </div> <!--separate-->
+        </div>
+
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 100px; ;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+        <img src="/images/4earth/ear-ani.gif" style="width: 360px; height: auto; ">  
+        </div>
+
+        <div class="column is-8"> <!-- short data column is auto -->
+        <div class="textbox">
+
+              <table class="table">  <!-- short data table-->
+
+                <tbody>
+
+                <tr>
+                    <td class="cellbgcolor" style ="border:0px; " >ลำดับในระบบสุริยะ :</td>
+                    <td class="cellbgcolor" style ="border:0px; " > 3</td>
+                    <td class="cellbgcolor" style ="border:0px; " ></td>
+                    <td class="cellbgcolor" style ="border:0px; " >จำนวนวงแหวน :</td>
+                    <td class="cellbgcolor" style ="border:0px; " > -</td>
+                    <td class="cellbgcolor" style ="border:0px; " > วง</td>
+                  </tr>
+
+                  <tr>
+                    <td class="cellbgcolor" style ="border:0px; " >ประเภท :</td>
+                    <td class="cellbgcolor" style ="border:0px; " > ดาวเคราห์หิน</td>
+                    <td class="cellbgcolor" style ="border:0px; " ></td>
+                    <td class="cellbgcolor" style ="border:0px; " >ระยะห่างจากดวงอาทิตย์ :</td>
+                    <td class="cellbgcolor" style ="border:0px; " > 149.60</td>
+                    <td class="cellbgcolor" style ="border:0px; " >ล้านกิโลเมตร</td>
+                  </tr>
+
+                <tr>
+                    <td class="cellbgcolor" style ="border:0px; " > รัศมี :</td>
+                    <td class="cellbgcolor" style ="border:0px; " >6,378</td>
+                    <td class="cellbgcolor" style ="border:0px; " >กิโลเมตร</td>
+                    <td class="cellbgcolor" style ="border:0px; " >ระยะเวลาที่หมุนรอบตัวเอง :</td>
+                    <td class="cellbgcolor" style ="border:0px; " > 23 ชั่วโมง 56 นาที 4.1 วินาที</td>
+                    <td class="cellbgcolor" style ="border:0px; " > </td>
+                  </tr>
+
+                  <tr>
+                    <td class="cellbgcolor" style ="border:0px; " >มวล :</td>
+                    <td class="cellbgcolor" style ="border:0px; " >5.9736x10<sup>24</sup></td>
+                    <td class="cellbgcolor" style ="border:0px; " >กิโลกรัม</td>
+                    <td class="cellbgcolor" style ="border:0px; " >ระยะเวลาที่โคจรรอบดวงอาทิตย์ :</td>
+                    <td class="cellbgcolor" style ="border:0px; " >365.26</td>
+                    <td class="cellbgcolor" style ="border:0px; " >วัน</td>
+                  </tr>
+
+                  <tr>
+                    <td class="cellbgcolor" style ="border:0px; " >อุณหภูมิ :</td>
+                    <td class="cellbgcolor" style ="border:0px; " >14 </td>
+                    <td class="cellbgcolor" style ="border:0px; " >องศาเซลเซียส</td>
+                    <td class="cellbgcolor" style ="border:0px; " >สัญลักษณ์ :</td>
+                    <td class="cellbgcolor" style ="border:0px; " ><img src="/images/4earth/symbol_earth.gif" style="width: 20px; height: auto; "></td>
+                    <td class="cellbgcolor" style ="border:0px; " ></td>
+                  </tr>
+
+                  <tr>
+                    <td class="cellbgcolor" style ="border:0px; " >จำนวนดาวบริวาร :</td>
+                    <td class="cellbgcolor" style ="border:0px; " >1</td>
+                    <td class="cellbgcolor" style ="border:0px; " >ดวง</td>
+                    <td class="cellbgcolor" style ="border:0px; " >จุดเด่น :</td>
+                    <td class="cellbgcolor" style ="border:0px; " >มีสภาวะแวดล้อมเอื้ออำนวยต่อการดำรงชีวิตของสิ่งมีชีวิต</td>
+                    <td class="cellbgcolor" style ="border:0px; " ></td>
+                  </tr>
+
+
+                </tbody>
+
+              </table>  
+
+        </div> 
+      </div>
+
+    </div> <!-- pic left -->
+
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+
+      <div class="column is-8"> <!-- short data column is auto -->
+        <div class="textbox" style="border-radius: 50px 15px 5px 30px;">
       
+          <p class="MessageParagraph">
+           โลกที่อยู่อาศัยของมนุษย์เรานั้นเป็นดาวเคราะห์ลำดับที่ 3 ในระบบสุริยะ โลกเป็นดาวเคราะห์ที่มีขนาดใหญ่ที่สุดในบรรดาดาวเคราะห์หินทั้งสี่ในระบบสุริยะ(ได้แก่ ดาวพุธ ดาวศุกร์ โลก และ ดาวอังคาร) โลกนั้นถือกำเนิดเมื่อ 4.54 พันล้านปีมาแล้ว โดยในปัจจุบันโลกถือว่าเป็นดาวเคราะห์เพียงดวงเดียวที่มีสิ่งมีชีวิตอาศัยอยู่ เนื่องจากโลกมีชั้นบรรยากาศที่มีออกซิเจนและมีน้ำที่มีความจำเป็นต่อการดำรงชีวิต อีกทั้งยังมีสนามแม่เหล็กโลกที่ป้องกันการแผ่รังสีต่างๆที่เป็นอันตรายจากอวกาศอีกด้วย  
+          </p> <br> 
+
+          </div> 
+        </div>
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+        <img src="/images/4earth/ear(1).jpg" style="width: 360px; height: auto; ">  
+        </div>
+
+    </div> <!-- pic right -->
+
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+        <img src="/images/4earth/ear(2).jpg" style="width: 360px; height: auto; ">  
+        </div>
+
+        <div class="column is-8"> <!-- short data column is auto -->
+      <div class="textbox">
+          <p class="MessageParagraph">
+            นอกจากโลกของเราที่โคจรรอบดวงอาทิตย์แล้วโลกยังมีดวงจันทร์ที่โคจรรอบโลกอยู่ด้วย โดยระนาบการโคจรรอบโลกของดวงจันทร์ทำมุมประมาณ 5 องศากับระนาบการโคจรของโลกรอบดวงอาทิตย์ ซึ่งสมมุติว่าระนาบทั้งสองเป็นระนาบเดียวกันแล้วจะทำให้เกิดอุปราคาขึ้นทุก 2 สัปดาห์ สลับกันระหว่างสุริยุปราคาและจันทรุปราคา นอกจากนี้ดวงจันทร์ยังมีคาบเวลาการโคจรรอบโลก 27.32 วัน เท่ากันกับคาบเวลาในการโคจรรอบตัวเองของดวงจันทร์ทำให้เรามองเห็นดวงจันทร์จากโลกเพียงด้านเดียวของดวงจันทร์อยู่เสมอ
+          </p> <br>
+
+        </div> 
+      </div>
+
+    </div> <!-- pic left -->
+
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+
+      <div class="column is-8"> <!-- short data column is auto -->
+        <div class="textbox" style="border-radius: 50px 15px 5px 30px;">
+      
+          <p class="MessageParagraph">
+           โลกโคจรรอบดวงอาทิตย์ในทิศทางทวนเข็มนาฬิกาเมื่อมองจากเหนือขั้วโลกเหนือของโลกและดวงอาทิตย์ มีลักษณะการโคจรเป็นรูปวงรีใช้เวลาในการโคจร 1 รอบ 365.2564 วัน และโลกหมุนรอบตัวเองใช้เวลา 24 ชั่วโมง (1 วัน) โดยมีระยะใกล้ดวงอาทิตย์มากที่สุด 147.1 ล้านกิโลเมตร และระยะไกลดวงอาทิตย์มากที่สุด 152.1 ล้านกิโลเมตร โดยแกนหมุนของโลก(ขั้วเหนือ-ใต้)ทำมุมเอียงกับระนาบการโคจรรอบดวงอาทิตย์ (ecliptic plane) 23.5 องศา การที่แกนโลกมีความเอียงนี่เองทำให้แต่ละพื้นที่บนโลกได้รับแสงจากดวงอาทิตย์ไม่เท่ากันในแต่ละวันใน 1 ปี จึงทำให้เกิดฤดูกาลขึ้นบนโลกนั่นเอง ในฤดูร้อนของซีกโลกเหนือ ขั้วโลกเหนือจะหันเข้าหาดวงอาทิตย์ และเมื่อขั้วโลกเหนือหันออกจากดวงอาทิตย์ก็จะเกิดฤดูหนาวขึ้นที่ซีกโลกเหนือ
+          </p> <br>
+
+          <p class="MessageParagraph">
+           การแบ่งว่าเกิดฤดูกาลใดบนโลกนี้สามารถแบ่งได้โดยใช้วันโซลสทิส (solstices) และวันอิควิน็อก (equinox) โดยวันโซลสทิสฤดูร้อน (summer solstice) เกิดขึ้นวันที่ 21 มิถุนายน เป็นวันที่ขั้วโลกเหนือหันเข้าหาดวงอาทิตย์มากที่สุด วันโซลสทิสฤดูหนาว (winter solstice) เกิดขึ้นวันที่ 21 ธันวาคมเป็นวันที่ขั้วโลกเหนือหันออกจากดวงอาทิตย์มากที่สุด วันอิควิน็อกฤดูใบไม้ผลิ (spring equinox) และวันอิควิน็อกฤดูใบไม้ร่วง (autumnal equinox) เกิดขึ้นในวันที่ 20 มีนาคม และ 23 กันยายน ตามลำดับเป็นวันที่แกนของโลกตั้งฉากกับเส้นตรงที่ลากจากโลกไปยังดวงอาทิตย์ โดยวันทั้งสี่ก็จะเป็นช่วงของวันที่เกิดฤดูกาลต่างๆตามชื่อของวันนั่นเอง
+          </p> <br> 
+
+          </div> 
+        </div>
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+        <img src="/images/4earth/ear(3).jpg" style="width: 360px; height: auto; ">  
+        </div>
+
+    </div> <!-- pic right -->
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
+      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
+        <img src="/images/toon_earth.png" style="width: 120px; height: auto; ">  
+        </div> <!--separate-->
+      </div>
+
+      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+        <div class="column is-2">
+          <div class="textboxheader">
+            <h2>โครงสร้าง</h2>
+          </div>
+        </div>
+      </div> <!--header-->
+        
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+        <img src="/images/4earth/ear(4).jpg" style="width: 360px; height: auto; ">  
+        </div>
+
+        <div class="column is-8"> <!-- short data column is auto -->
+        <div class="textbox">
+          <p class="MessageParagraph">
+             พื้นผิวส่วนใหญ่ของโลกถึง 71 เปอร์เซนต์ปกคลุมไปด้วยน้ำ ส่วนพื้นผิวที่เหนือก็จะเป็นพื้นที่ที่เป็นทวีปและเกาะต่างๆ โดยในส่วนของเปลือกโลกนี้จะมีความหนาต่างกันออกไปเช่นเปลือกโลกส่วนที่อยู่ใต้มหาสมุทรอาจมีความหนาประมาณ 6 กิโลเมตร ส่วนเปลือกโลกส่วนที่เป็นทวีปอาจมีความหนาถึง 30 – 50 กิโลเมตร เปลือกโลกนี้จะไปกอบไปด้วยหินและแร่ธาตุมากมากหลากหลายชนิด ขณะที่บริเวณขั้วโลกส่วนใหญ่ถูกปกคลุมด้วยน้ำแข็ง   
+          </p> <br>
+
+        </div> 
+      </div>
+
+    </div> <!-- pic left -->
+
+     <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+        <img src="/images/4earth/ear(5).jpg" style="width: 360px; height: auto; ">  
+        </div>
+
+        <div class="column is-8"> <!-- short data column is auto -->
+        <div class="textbox">
+          <p class="MessageParagraph">
+               ถัดจากเปลือกโลกลงไปจะเป็นชั้นของแมนเทิลที่เป็นของแข็งประกอบไปด้วยเหล็กและแมกนีเซียมเป็นหลักโดยมีความหนาประมาณ 2800 กิโลเมตร ถัดลงไปจะเป็นส่วนของแกนโลกซึ่งแบ่งออกเป็นสองชั้นด้วยกันคือ แกนโลกชั้นนอก (outer core) และ แกนโลกชั้นใน (inner core) โดยแกนโลกชั้นนอกจะอยู่ห่างจากผิวโลกลงไปประมาณ 2900-5000 กิโลเมตรประกอบไปด้วยเหล็กและนิกเกิลในสถานะของเหลวมีอุณหภูมิประมาณ 6200 – 6400 องศาเซลเซียส ส่วนแกนโลกชั้นในมีรัศมีประมาณ 1000 กิโลเมตรชั้นนี้ก็จะประกอบไปด้วยเหล็กและนิกเกิลเช่นเดียวกับแกนโลกชั้นนอกแต่อยู่ในสถานะของแข็งมีอุณหภูมิประมาณ 4300-6200 องศาเซสเซียส
+          </p> <br>
+
+        </div> 
+      </div>
+
+    </div> <!-- pic left -->
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
+      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
+        <img src="/images/toon_earth.png" style="width: 120px; height: auto; ">  
+        </div> <!--separate-->
+      </div>
+
+
+
+      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+        <div class="column is-2">
+          <div class="textboxheader">
+            <h2>ชั้นบรรยากาศ</h2> 
+          </div>
+        </div>
+      </div><!--header-->
+
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+          <img src="/images/4earth/ear(6).jpg" style="width: 360px; height: auto; ">
+        </div>
+
+        <div class="column is-8"> <!-- short data column is auto -->
+        <div class="textbox">
+             <p class="MessageParagraph">
+              โลกห่อหุ้มไปด้วยชั้นบรรยากาศที่มีความหนาหลายร้อยกิโลเมตร โดยประกอบไปด้วยแก๊สไนโตรเจน 78.1 เปอร์เซนต์ แก๊สออกซิเจน 20.9 เปอร์เซนต์ อาร์กอน 0.9 เปอร์เซนต์ คาร์บอนไดออกไซด์ ที่เหลือเป็นแก๊สอื่นๆ นอกจากนี้ยังปรากฏไอน้ำในชั้นบรรยากาศอีกด้วย ชั้นบรรยากาศของโลกนี้จะมีความหนาแน่นที่บริเวณผิวโลกมากกว่าบริเวณที่สูงขึ้นไปอันเนื่องมาจากแรงโน้มถ่วงของโลก เช่นที่ความสูง 30 กิโลเมตรเหนือระดับน้ำทะเลความดันบรรยากาศจะมีค่าเพียง 1 เปอร์เซ็นต์ของความดันบรรยากาศที่ระดับน้ำทะเล
+          </p> <br>
+
+        </div> 
+      </div>
+
+    </div> <!-- pic left -->
+
+        <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
+      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
+        <img src="/images/toon_earth.png" style="width: 120px; height: auto; ">  
+        </div> <!--separate-->
+      </div>
+
+
+
+      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+        <div class="column is-2">
+          <div class="textboxheader">
+            <h2>ชั้นบรรยากาศของโลกแบ่งได้เป็น 5 ชั้นดังนี้</h2> 
+          </div>
+        </div>
+      </div><!--header-->
+
+
+    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
+      <!-- big column and add margin left right 240px -->   <!-- -->
+
+        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
+          <img src="/images/4earth/ear(7).jpg" style="width: 360px; height: auto; ">
+        </div>
+
+        <div class="column is-8"> <!-- short data column is auto -->
+        <div class="textbox">
+          <p class="MessageParagraph">
+              โทรโพสเฟียร์ (Troposphere) เป็นชั้นบรรยากาศล่างสุดตั้งแต่ผิวโลกไปถึงความสูง 8 กิโลเมตรบริเวณขั้วโลกหรือ ความสูง 15 กิโลเมตรบริเวณเส้นศูนย์สูตร ชั้นบรรยากาศนี้จะมีมวลของอากาศถึง 75 เปอร์เซนต์โดยมวลของมวลอากาศทั้งหมดที่ห่อหุ้มโลกไว้ อุณหภูมิของบรรยากาศชั้นนี้บริเวณขั้วโลกจะมีอุณหภูมิต่ำกว่าบริเวณเส้นศูนย์สูตรเนื่องจากผิวโลกบริเวณต่างๆ ได้รับความร้อนจากดวงอาทิตย์ที่ต่างกันทำให้เกิดสภาวะอากาศต่างๆขึ้น เกิดลมพัดจากบริเวณที่อุณหภูมิแตกต่างกันไปทั่วพื้นผิวโลก และลมดังกล่าวก็ทำให้เกิดการไหลขแงกระแสน้ำด้วย บริเวณบนสุดของชั้นโทรโพสเฟียร์นี้อาจมีอุณหภูมิลดลงถึงประมาณ -52 องศาเซลเซียส
+          </p> <br>
+          <p class="MessageParagraph">
+              สตราโตสเฟียร์ (Stratosphere) เป็นบริเวณถัดจากชั้นโทรโพสเฟียร์ไปจนถึงความสูง 50 กิโลเมตรเหนือระดับน้ำทะเล บริเวณบนสุดของชั้นสตราโตสเฟียร์นี้อาจมีอุณหภูมิประมาณ -3 องศาเซลเซียส
+          </p> <br>
+          <p class="MessageParagraph">
+              เมสโซสเฟียร์ (Mesosphere) เป็นบริเวณถัดจากชั้นสตราโตสเฟียร์ไปจนถึงความสูง 80-85 กิโลเมตรเหนือระดับน้ำทะเล บริเวณที่เชื่อมต่อระหว่างชั้นเมสโซสเฟียร์และชั้นเทอร์โมสเฟียร์นี้(บริเวณบนสุดของชั้นเมสโซสเฟียร์) จัดว่าเป็นบริเวณที่มีอุณหภูมิต่ำสุดบนโลกคือประมาณ -100 องศาเซลเซียส ชั้นเมสโซสเฟียร์นี้เป็นชั้นที่ฝนดาวตก (meteors) ส่วนใหญ่เผาไหม้หมดเมื่อเข้าสู่ชั้นบรรยากาศของโลก
+          </p> <br>
+          <p class="MessageParagraph">
+              เทอร์โมสเฟียร์ (Thermosphere) เป็นบริเวณถัดจากชั้นเมสโซสเฟียร์ไปจนถึงความสูงประมาณ 600 กิโลเมตรเหนือระดับน้ำทะเล บริเวณบนสุดของชั้นเทอร์โมสเฟียร์นี้อาจมีอุณหภูมิสูงถึง 1700 องศาเซลเซียสชั้นนี้เป็นชั้นสถานีอวกาศนานาชาติ (ISS) โคจรรอบโลกอยู่ที่ความสูง 320 – 380 กิโลเมตร
+          </p> <br>
+          <p class="MessageParagraph">
+              เอ็กโซสเฟียร์ (Exosphere) เป็นบรรยากาศชั้นนอกสุดของโลกเป็นรอยต่อระหว่างชั้นบรรยากาศของโลกและอวกาศซึ่งมีขอบเขตแบ่งระหว่างชั้นบรรยากาศและอวกาศที่ไม่ชัดเจน บรรยากาศชั้นนี้ประกอบไปด้วยแก๊สไฮโดรเจนและฮีเลียมเป็นหลัก
+          </p> <br>
+        </div> 
+      </div>
+    </div> <!-- pic left -->
+
     </main> 
   </section>
 
