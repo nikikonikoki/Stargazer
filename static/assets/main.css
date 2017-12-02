@@ -121,6 +121,10 @@ body {
 	border-top: 1px solid white;
 }
 
+.highlight {
+	position: fixed;
+	background-image: url(/images/loading01.gif);
+}	
 
 .footer {
 	background-color: transparent;
@@ -155,6 +159,11 @@ body {
 	position: absolute;
 	bottom: 10px;
 	right: 50px;
+}
+
+.bear  {
+	position: fixed;
+	background-image: url(/images/galaxy1.jpg);
 }
 
 .bear .small {
@@ -347,6 +356,11 @@ body {
 	width: 1500px;
 	/*height: 800px;*/
 	z-index: 999;
+}
+
+.body {
+	position: fixed;
+	background-image: url(/images/galaxy1.jpg);
 }
 
 .body .smallbear {
