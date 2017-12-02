@@ -295,6 +295,60 @@ body {
 	font-size: 30px;
 }
 
+.bear .bigb {
+	position: fixed;
+	top:200px;
+	left: 40px;
+	width: 650px;
+	height: 650px;
+	z-index: 999;
+}
+
+.bear .cass {
+	position: fixed;
+	top:150px;
+	left: 10px;
+	width: 650px;
+	height: 650px;
+	z-index: 999;
+}
+
+.bear .orion {
+	position: fixed;
+	top:50px;
+	left: 40px;
+	width: 650px;
+	height: 400px;
+	z-index: 999;
+}
+
+.bear .nuc {
+	position: fixed;
+	top:250px;
+	left: 80px;
+	width: 600px;
+	height: 600px;
+	z-index: 999;
+}
+
+.bear .peca {
+	position: fixed;
+	top:200px;
+	left: 90px;
+	width: 700px;
+	height: 600px;
+	z-index: 999;
+}
+
+.bear .sbear {
+	position: fixed;
+	top: 30px;
+	right: 550px;
+	width: 1500px;
+	/*height: 800px;*/
+	z-index: 999;
+}
+
 .body .smallbear {
 	position: fixed;
 	top:350px;
