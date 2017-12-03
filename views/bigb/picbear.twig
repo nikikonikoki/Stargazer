@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title ?: 'Default title' }}</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/assets/main.css">
+  {% block stylesheet %}{% endblock %}
+</head>
+<body>
+    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="/images/pic/1.jpg" style="width:100%">
+  <img class="mySlides" src="/images/pic/2.jpg" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+  function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+  </script>     
+ </body>
+  {% block content %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/assets/main.js"></script>
+  
+  {% block javascript %}{% endblock %}
+</body>
+</html>

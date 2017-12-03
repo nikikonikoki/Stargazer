@@ -6,66 +6,277 @@
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/planet_moveVer2.css">
+  <link rel="stylesheet" type="text/css" href="/assets/planet_move.css">
   {% block stylesheet %}{% endblock %}
 </head>
-<body>
+<body style ="overflow:hidden;">
   {% include 'layout/header.twig' ignore missing %}
       
-  <section class="section" style="background-image: url(/images/space1.png);width: 100%;height: 100vh;position:absolute;">
+  <section class="section" style="background-image: url(/images/galaxy1.jpg);width: 100%;height: 100%;overflow:hidden;position:absolute;">
     <main>
       <div>
-        <div class="MoveNeptune">
-            <a href="/our-solar-system/short_neptune">
-              <img src="/images/toon_neptune.png" title="ดาวเนปจูน" style="width: 4%; height: auto;">
-            </a>
-          </div>
-        <div class="MoveUranus">
-          <a href="/our-solar-system/short_uranus">
+        <div class="MoveNeptune" data-toggle="modal" data-target="#ModalNeptune">
+            <img src="/images/toon_neptune.png" title="ดาวเนปจูน" style="width: 4%; height: auto;">
+        </div>
+        <div class="MoveUranus" data-toggle="modal" data-target="#ModalUranus">
             <img src="/images/toon_uranus.png" title="ดาวยูเรนัส" style="width: 5%; height: auto;">
-          </a>
         </div>
-        <div class="MoveSaturn">
-          <a href="/our-solar-system/short_saturn">
+        <div class="MoveSaturn" data-toggle="modal" data-target="#ModalSaturn">
             <img src="/images/toon_saturn.png" title="ดาวเสาร์" style="width: 9%; height: auto;">
-          </a>
         </div>
-        <div class="MoveJupiter">
-          <a href="/our-solar-system/short_jupiter">
+        <div class="MoveJupiter" data-toggle="modal" data-target="#ModalJupiter">
             <img src="/images/toon_jupiter.png" title="ดาวพฤหัสบดี" style="width: 10%; height: auto;">
-          </a>
         </div>
-        <div class="MoveMars">
-          <a href="/our-solar-system/short_mars">
+        <div class="MoveMars" data-toggle="modal" data-target="#ModalMars">
             <img src="/images/toon_mars.png" title="ดาวอังคาร" style="width: 5%; height: auto;">
-          </a>
         </div>
-        <div class="MoveEarth">
-          <a href="/our-solar-system/short_earth">
+        <div class="MoveEarth" data-toggle="modal" data-target="#ModalEarth">
             <img src="/images/toon_earth.png" title="ดาวโลก" style="width: 7%; height: auto;">
-          </a>
         </div>
-        <div class="MoveVenus">
-          <a href="/our-solar-system/short_venus">
+        <div class="MoveVenus" data-toggle="modal" data-target="#ModalVenus">
             <img src="/images/toon_venus.png" title="ดาวศุกร์" style="width: 10%; height: auto;">
-          </a>
         </div>
-        <div class="MoveMercury" >
-          <a href="/our-solar-system/short_mercury">
+        <div class="MoveMercury" data-toggle="modal" data-target="#ModalMercury">
             <img src="/images/toon_mercury.png" title="ดาวพุธ" style="width: 10%; height: auto;">
-          </a>
         </div>
-        <div class="StaticSun">
-          <a href="/our-solar-system/short_sun">
-            <img src="/images/toon_sun.png" title="ดวงอาทิตย์" style="width: 100%; height: auto;">
-          </a>
+        <div class="StaticSun" data-toggle="modal" data-target="#ModalSun">
+            <img src="/images/toon_sun3.png" title="ดวงอาทิตย์" style="width: 100%; height: auto;">
         </div>
       </div>
+
+      <div class="modal fade" id="ModalNeptune" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดาวเนปจูน (Neptune)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 8<br>
+                ประเภท: ดาวเคราะห์แก๊ส<br>
+                รัศมี: 24,764 กิโลเมตร<br>
+                จำนวนดาวบริวาร: 13 ดวง<br>
+                จำนวนวงแหวน: 6 วง<br> 
+                ระยะห่างจากดวงอาทิตย์: 4,498 ล้านกิโลเมตร<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 16.11 ชั่วโมง<br> 
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 164.8 ปี<br>  
+                จุดเด่น: ค้นพบจากการคำนวณโดยนักคณิตศาสตร์<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_neptune" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalUranus" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดาวยูเรนัส (Uranus)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 7<br>
+                ประเภท: ดาวเคราะห์แก๊ส<br>
+                รัศมี: 25,559 กิโลเมตร<br>
+                จำนวนดาวบริวาร: 27 ดวง<br>
+                จำนวนวงแหวน: 13 วง<br>
+                ระยะห่างจากดวงอาทิตย์: 2,870 ล้านกิโลเมตร<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 17.24 ชั่วโมง<br>
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 80 ปี<br>  
+                จุดเด่น: หมุนรอบตัวเองในแนวตะแคง และมีวงแหวนอยู่ในแนวตั้ง<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_uranus" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalSaturn" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดาวเสาร์ (Saturn)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 6<br>
+                ประเภท: ดาวเคราะห์แก๊ส<br>
+                รัศมี: 60,268 กิโลเมตร<br>
+                จำนวนดาวบริวาร: 62 ดวง<br>
+                จำนวนวงแหวน: 7 วง<br> 
+                ระยะห่างจากดวงอาทิตย์: 1,427 ล้านกิโลเมตร<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 10.66 ชั่วโมง<br>
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 29.4 ปี<br>   
+                จุดเด่น: มีวงแหวนชัดเจน<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_saturn" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalJupiter" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดาวพฤหัส (Jupiter)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 5<br>
+                ประเภท: ดาวเคราะห์แก๊ส<br>
+                รัศมี: 71,492 กิโลเมตร<br>
+                จำนวนดาวบริวาร: 62 ดวง<br>
+                จำนวนวงแหวน: 3 วง<br> 
+                ระยะห่างจากดวงอาทิตย์: 778.41 ล้านกิโลเมตร<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 9.92 ชั่วโมง<br> 
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 11.86 ปี<br>  
+                ฉายา: ดาวเคราะห์ยักษ์<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_jupiter" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalMars" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดาวอังคาร (Mars)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 4<br>
+                ประเภท: ดาวเคราะห์หิน<br>
+                รัศมี: 3,397 กิโลเมตร<br>
+                จำนวนดาวบริวาร: 2<br>       
+                ระยะห่างจากดวงอาทิตย์: 227.94 ล้านกิโลเมตร<br>       
+                ระยะเวลาที่หมุนรอบตัวเอง: 24.62 วัน<br>             
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 1.88 ปี (687 วัน)<br>  
+                ฉายา: ดาวเคราะห์สีแดง<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_mars" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalEarth" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">โลก (Earth)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 3<br>
+                ประเภท: ดาวเคราะห์หิน<br>
+                รัศมี: 6,378 กิโลเมตร<br>
+                จำนวนดาวบริวาร: 1 ดวง<br>
+                ระยะห่างจากดวงอาทิตย์: 149.60 ล้านกิโลเมตร<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 23 ชั่วโมง 56 นาที 4.1 วินาที<br>
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 365.26 วัน<br> 
+                จุดเด่น: มีสภาวะแวดล้อมเอื้ออำนวยต่อการดำรงชีวิตของสิ่งมีชีวิต<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_earth" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalVenus" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดาวศุกร์ (Venus)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 2<br>
+                ประเภท: ดาวเคราะห์หิน<br>
+                รัศมี: 6,052 กิโลเมตร<br>
+                จำนวนดาวบริวาร: ไม่มี<br>
+                ระยะห่างจากดวงอาทิตย์: 108.21 ล้านกิโลเมตร<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 243.02 วัน<br>
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 224.70 วัน<br>
+                ฉายา: ฝาแฝดของโลก<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_venus" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalMercury" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดาวพุธ (Mercury)</h4>
+            </div>
+          <div class="modal-body">
+            <p>ลำดับในระบบสุริยะ: 1<br>
+                ประเภท: ดาวเคราะห์หิน<br>
+                รัศมี: 2,440 กิโลเมตร<br>
+                จำนวนดาวบริวาร: ไม่มี<br>
+                ระยะห่างจากดวงอาทิตย์: 57.91 ล้านกิโลเมตร<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 58.65 วัน<br>
+                ระยะเวลาที่โคจรรอบดวงอาทิตย์: 87.97 วัน<br>
+                ฉายา: เตาไฟแช่แข็ง<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_mercury" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ModalSun" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ดวงอาทิตย์ (Sun)</h4>
+            </div>
+          <div class="modal-body">
+            <p>เป็นศูนย์กลางของระบบสุริยะ<br>
+                ประเภท: ดาวฤกษ์<br>
+                รัศมี: 696,000 กิโลเมตร<br>
+                จำนวนดาวบริวาร: 8 ดวง<br>
+                ระยะเวลาที่หมุนรอบตัวเอง: 25 วัน<br></p>
+          </div>
+          <div class="modal-footer">
+            <a href="/our-solar-system/full_sun" class="btn btn-info" role="button">See More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
     </main> 
   </section>
 

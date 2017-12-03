@@ -17,4 +17,3 @@ document.getElementById('rocket').onclick = function(e) {
 	}, 1000)
 };
 
-

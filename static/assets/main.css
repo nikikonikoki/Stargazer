@@ -55,8 +55,8 @@ body {
 
 .navbar-end .help {
 	position: absolute;
-	right: 200px;
-	bottom: 8px;
+	right: 100px;
+	top: 25px;
 }
 
 .header .navbar a {
@@ -121,6 +121,10 @@ body {
 	border-top: 1px solid white;
 }
 
+.highlight {
+	position: fixed;
+	background-image: url(/images/loading01.gif);
+}	
 
 .footer {
 	background-color: transparent;
@@ -148,116 +152,323 @@ body {
 .footer .connect {
 	position: absolute;
 	bottom: 16px ;
-	right: 50px;
-}
-
-.footer .connect1 {
-	position: absolute;
-	bottom: 20px;
-	right:  120px;
+	right: 120px;
 }
 
 .footer .teles {
 	position: absolute;
 	bottom: 10px;
-	right: 850px;
+	right: 50px;
 }
 
-.bear.space1 {
-	position:fixed;
-	bottom: 0;
-	
+.bear  {
+	position: fixed;
+	background-image: url(/images/galaxy1.jpg);
+	z-index: 99px;
 }
 
 .bear .small {
 	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
 }
 
-.bear .big {
+.bear .small1 {
 	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .small2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .big  {
+	position: fixed;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+.bear .big1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .big2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .bat {
 	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+.bear .bat1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .bat2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .naip {
 	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+.bear .naip1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .naip2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .nucket {
 	position: fixed;
-	bottom: 100px;
-	left:  400px;
-	z-index: 999;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+
+
+.bear .nucket1 {
+	position: fixed;
+	color: white;
+	bottom: 450px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .nucket2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
 }
 
 .bear .pica {
 	position: fixed;
-	bottom: 100px;
-	left:  400px;
+	color: #00ffbf;
+	bottom: 600px;
+	left: 1000px;
+}
+.bear .pica1 {
+	position: fixed;
+	color: white;
+	bottom: 400px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .pica2 {
+	position: fixed;
+	color: white;
+	bottom: 150px;
+	left: 750px;
+	font-size: 30px;
+}
+
+.bear .bigb {
+	position: fixed;
+	top:200px;
+	left: 40px;
+	width: 650px;
+	height: 650px;
 	z-index: 999;
+}
+
+.bear .cass {
+	position: fixed;
+	top:150px;
+	left: 10px;
+	width: 650px;
+	height: 650px;
+	z-index: 999;
+}
+
+.bear .orion {
+	position: fixed;
+	top:50px;
+	left: 40px;
+	width: 650px;
+	height: 400px;
+	z-index: 999;
+}
+
+.bear .nuc {
+	position: fixed;
+	top:250px;
+	left: 80px;
+	width: 600px;
+	height: 600px;
+	z-index: 999;
+}
+
+.bear .peca {
+	position: fixed;
+	top:200px;
+	left: 90px;
+	width: 700px;
+	height: 600px;
+	z-index: 999;
+}
+
+.bear .sbear {
+	position: fixed;
+	top: 30px;
+	right: 550px;
+	width: 1500px;
+	/*height: 800px;*/
+	z-index: 999;
+}
+
+.body {
+	position: fixed;
+	background-image: url(/images/galaxy1.jpg);
 }
 
 .body .smallbear {
 	position: fixed;
-	top: 400px;
-	left: 90px;
+	top:350px;
+	left: 1000px;
 	z-index: 999; 
+}
+
+.body .smallbear h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 470px;
+	left: 1100px;
 }
 
 .body .bigbear {
 	position: fixed;
-	top: 120px;
-	left: 300px;
+	top: 100px;
+	left: 1300px;
 	z-index:999;
+}
+
+.body .bigbear h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 440px;
+	left: 1400px;
 }
 
 .body .bat {
 	position: fixed;
-	top: 550px;
-	left: 400px;
-	z-index:999;
-}
-
-.body .nai-pran {
-	position: fixed;
-	top: 300px;
+	top: 100px;
 	left: 700px;
 	z-index:999;
 }
 
+.body .bat h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 650px;
+	left: 880px;
+}
+
+.body .nai-pran {
+	position: fixed;
+	top: 450px;
+	left: 800px;
+	z-index:999;
+}
+
+.body .nai-pran h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 230px;
+	left: 970px;
+}
+
 .body .nucket {
 	position: fixed;
-	top: 100px;
-	left: 1000px;
+	top: 400px;
+	left: 500px;
 	z-index:999;
 }
 
+.body .nucket h1 {
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 230px;
+	left: 520px;
+}
 .body .pegasus {
 	position: fixed;
-	top: 400px;
-	left: 1200px;
+	top: 250px;
+	left: 100px;
 	z-index:999;
 }
 
-/*.highlight {
-  margin-bottom: 0 !important;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}*/
+.body .pegasus h1{
+	position: fixed;
+	color: white ;
+	font-size: 30px;
+	bottom: 580px;
+	left: 190px;
+}
+
+.body .text1  h1 {
+	position: fixed;
+	bottom: 0px;
+	left: 600px;
+	margin: 0.5em 0;
+	font-size: 4em;
+  	color: yellow ;
+  	text-align: center;
+  	text-transform: uppercase;
+}
+
+.body .text1  {
+	position: fixed;
+	background-image: url(/images/galaxy1.jpg);	
+}
+
 
 .highlight .highlight-item {
 	position: fixed;
@@ -271,3 +482,52 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+	@-webkit-keyframes typing { from { width: 0; } }
+	@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.text .welcome h1 {
+	position: absolute;
+	color: white;
+	font-size: 100px;
+	bottom: 600px;
+	left: 300px;
+
+	
+    border-right: .1em solid pink;
+    width: 16.5em; 
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(21, end),
+    blink-caret .5s step-end infinite alternate;
+}	
+
+.text .star h1 {
+	position: absolute;
+	color: gray;
+	font-size: 120px;
+	bottom: 450px;
+	left: 800px;
+}	
+.text .welcome {
+	position: fixed;
+	background-image: url(/images/galaxy1.jpg);	
+}
+
+.text .click {
+	position: fixed;
+	font-size: 50px;
+	top: 600px;
+	left: 700px;
+	color: pink;
+    width: 16.5em; 
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(21, end),
+    blink-caret .5s step-end infinite alternate;
+}
+
+
+

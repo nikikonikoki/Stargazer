@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title ?: 'Default title' }}</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/assets/main.css">
+  {% block stylesheet %}{% endblock %}
+</head>
+<body> 
+              <text class = "text">
+          <div class="welcome">
+            <h1>WELCOME TO WEBSITE</h1>
+
+          <div class="star">
+            <h1>STARGAZER</h1>
+          </div>
+
+          <img src="/images/galaxy1.jpg"> 
+          </div>
+
+          
+  <!-- <div id="counter">3</div>   -->
+         //   <script>
+         //   setInterval(function() {
+         //      var div = document.querySelector("#counter");
+         //      var count = div.textContent * 1 - 1;
+         //     div.textContent = count;
+         //      if (count <= 0) {
+         //       window.location.href="button";
+         //    }
+         // }, 1000);
+           </script>
+
+
+          <div class="click">
+            <a href="/home">Click to start</a>
+          </div>      
+
+
+         
+        
+ 
+  {% block content %}{% endblock %}
+  
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/assets/main.js"></script>
+  
+  {% block javascript %}{% endblock %}
+</body>
+</html>
