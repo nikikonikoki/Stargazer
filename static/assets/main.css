@@ -164,17 +164,18 @@ body {
 .bear  {
 	position: fixed;
 	background-image: url(/images/galaxy1.jpg);
+	z-index: 99px;
 }
 
 .bear .small {
-	position: fixed;
+	position: absolute;
 	color: #00ffbf;
 	bottom: 600px;
 	left: 1000px;
 }
 
 .bear .small1 {
-	position: fixed;
+	position: absolute;
 	color: white;
 	bottom: 400px;
 	left: 750px;
@@ -182,7 +183,7 @@ body {
 }
 
 .bear .small2 {
-	position: fixed;
+	position: absolute;
 	color: white;
 	bottom: 150px;
 	left: 750px;
