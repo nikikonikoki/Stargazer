@@ -25,7 +25,7 @@ const picaController = require('./controllers/pica.controller')
 const welcomeController = require('./controllers/welcome.controller')
 // const signupController = require('./controllers/signup.controller')
 
-const short_sunController = require('./controllers/solars_controller/short_sun.controller')
+/*const short_sunController = require('./controllers/solars_controller/short_sun.controller')
 const short_mercuryController = require('./controllers/solars_controller/short_mercury.controller')
 const short_venusController = require('./controllers/solars_controller/short_venus.controller')
 const short_earthController = require('./controllers/solars_controller/short_earth.controller')
@@ -33,7 +33,7 @@ const short_marsController = require('./controllers/solars_controller/short_mars
 const short_jupiterController = require('./controllers/solars_controller/short_jupiter.controller')
 const short_saturnController = require('./controllers/solars_controller/short_saturn.controller')
 const short_uranusController = require('./controllers/solars_controller/short_uranus.controller')
-const short_neptuneController = require('./controllers/solars_controller/short_neptune.controller')
+const short_neptuneController = require('./controllers/solars_controller/short_neptune.controller')*/
 
 const full_sunController = require('./controllers/solars_controller/full_sun.controller')
 const full_mercuryController = require('./controllers/solars_controller/full_mercury.controller')
@@ -65,7 +65,7 @@ app.get('/welcome',welcomeController.index)
 // app.get('/signup',signupController.index)
 
 
-app.get('/our-solar-system/short_sun',short_sunController.index)
+/*app.get('/our-solar-system/short_sun',short_sunController.index)
 app.get('/our-solar-system/short_mercury',short_mercuryController.index)
 app.get('/our-solar-system/short_venus',short_venusController.index)
 app.get('/our-solar-system/short_earth',short_earthController.index)
@@ -73,7 +73,7 @@ app.get('/our-solar-system/short_mars',short_marsController.index)
 app.get('/our-solar-system/short_jupiter',short_jupiterController.index)
 app.get('/our-solar-system/short_saturn',short_saturnController.index)
 app.get('/our-solar-system/short_uranus',short_uranusController.index)
-app.get('/our-solar-system/short_neptune',short_neptuneController.index)
+app.get('/our-solar-system/short_neptune',short_neptuneController.index)*/
 
 app.get('/our-solar-system/full_sun',full_sunController.index)
 app.get('/our-solar-system/full_mercury',full_mercuryController.index)
