@@ -168,14 +168,14 @@ body {
 }
 
 .bear .small {
-	position: absolute;
+	position: fixed;
 	color: #00ffbf;
 	bottom: 600px;
 	left: 1000px;
 }
 
 .bear .small1 {
-	position: absolute;
+	position: fixed;
 	color: white;
 	bottom: 400px;
 	left: 750px;
@@ -183,7 +183,7 @@ body {
 }
 
 .bear .small2 {
-	position: absolute;
+	position: fixed;
 	color: white;
 	bottom: 150px;
 	left: 750px;
