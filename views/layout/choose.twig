@@ -11,18 +11,27 @@
   {% block stylesheet %}{% endblock %}
 </head>
   {% include 'layout/header.twig' ignore missing %}
+  {% include 'layout/picgame.twig' ignore missing %}
 <body>
     <div class="body">
-      <a class="space1">
+      <a class="space1"> 
         <div class="columns is-marginless">
             <div class="column highlight-item" style="height: 100vh;">
-              <a class="button is-large easy-button" onclick="window.location.href='#'"><font size="10">
-              <font face="Supermarket"><font color="white">Easy</a> 
-        </div> -->
-            </div>      
+              <a class="button is-large easy-button"><font size="30">
+              <font face="Supermarket"><font color="white">ง่าย </a> 
+
+            <a class="button is-large middle-button" ><font size="30">
+              <font face="Supermarket"><font color="white">ปานกลาง</a>
+
+            <a class="button is-large hard-button"><font size="30">
+              <font face="Supermarket"><font color="white">ยาก</a>        
+            </div> 
+        </div>
+          
           <img src="/images/galaxy1.jpg">
+          <h3>เลือกภาพที่อยากเล่นในโหมดข้างล่างได้เลย</h3>
       </a>
-              
+      </a>        
   {% block content %}{% endblock %}
   {% include 'layout/footer.twig' ignore missing %}
   

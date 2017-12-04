@@ -42,7 +42,17 @@ body {
 
 }
 
+.body h3  {
+	position: fixed;
+	font-size:40px;
+	font-family: nithan;
+	top: 100px ;
+	right: 620px;
+	z-index: 999;
+}
+
 .enter-button {
+	position: absolute;
     padding: 45px 100px !important;
     margin-top: 400px;
     margin-left: 700px;
@@ -52,13 +62,37 @@ body {
 }
 
 .easy-button {
+	position: absolute;
     padding: 40px 65px !important;
-    margin-top: 150px;
+    margin-top: 180px;
     margin-left: 100px;
-    background-color: #993333 ;
-    border-color: #993333;
-
+    background-color: #32691F ;
+    border-color: #32691F;
 }
 
+.middle-button {
+	position: absolute;
+    padding: 40px 65px !important;
+    margin-top: 180px;
+    margin-left: 700px;
+    background-color: #E1B753 ;
+    border-color: #E1B753;
+}
 
+.hard-button {
+	position: absolute;
+	padding: 40px 65px !important;
+    margin-top: 180px;
+    margin-left:1400px;
+    background-color: #CC653E ;
+    border-color: #CC653E;
+}
 
+.easy .one {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 300px;
+	left: 50px;
+	z-index: 999;
+}
