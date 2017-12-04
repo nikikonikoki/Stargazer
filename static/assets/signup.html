@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html leng = "en">
-<head>
-   <meta charset="UTF-8">
-   <title>ลงทะเบียนเข้าสู่เว็บไซต์</title>   
+<html>
 <style>
-
+/* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -15,42 +12,70 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
-    background-color: #88BBAA;
+/*button {
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 70px;
-    margin: 80px 640px;
+    padding: 14px 20px;
+    margin: 0px;
+    margin-left: 30px;
     border: none;
     cursor: pointer;
-    width: 180px;
-    z-index: 999px;
-    font-size: 90px;
+    width: 100%;
+}*/
 
+body {
+  background-image: url(/images/sky1.jpg);
 }
 
-.pic  {
+h1 {
   position: fixed;
-  background-image: url(/images/sky.gif);
-
+  color:#76D9B9;
+  font-family: nithan;
+  font-size: 30px;
+  left: 480px;
+  top: 230px;
+  z-index: 999;
 }
 
+p {
+  position: fixed;
+  color: #DAA520;
+  font-family: nithan;
+  font-size: 50px;
+  left: 600px;
+  top: 10px;
+  z-index: 999;
+}
+
+h3 {
+  position: fixed;
+  color: #76D9B9;
+  font-family: nithan;
+  font-size: 30px;
+  right:  480px;
+  top: 220px;
+  z-index: 999;
+}
 /* Extra styles for the cancel button */
 .cancelbtn {
-    padding: 10px 15px;
-    margin: 50px 70px;
-    font-size: 20px;
+    padding: 14px 20px;
     background-color: #f44336;
+    margin-top: 10px;
 }
 
 .signupbtn {
-    padding: 10px 15px;
-    margin: 50px 70px;
-    font-size: 20px;
-    background-color: #000080;
+    padding: 14px 20px;
+    background-color: #000033;
+    margin-top: 10px;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {float: left; width:500px}
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+.container .logo {
+    margin:100px 400px;
+
+}
 
 /* Add padding to container elements */
 .container {
@@ -59,32 +84,35 @@ button {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    /*display: none;*/ /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 999; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 100px;
+    /*background-color: rgb(0,0,0);*/ /* Fallback color */
+    /*background-color: rgba(0,0,0,0.4);*/ /* Black w/ opacity */
+    padding-top: 20px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    position: fixed;
+    font-size: 35px;
+    opacity:0.8;
+    background-color: #666699;
+    margin: 8%  20% ; /* 5% from the top, 15% from the bottom and centered */
+    /*border: 1px solid #888;*/
+    width: 1000px; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
-.close {
+/*.close {
     position: absolute;
-    right: 140px;
-    top: 130px;
+    right: 35px;
+    top: 15px;
     color: #000;
     font-size: 40px;
     font-weight: bold;
@@ -95,7 +123,7 @@ button {
     color: red;
     cursor: pointer;
 }
-
+*/
 /* Clear floats */
 .clearfix::after {
     content: "";
@@ -105,54 +133,57 @@ button {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
+.cancelbtn, .signupbtn {
        width: 100%;
     }
 }
-
 </style>
-  <div class="pic">
-  <a class ="pic">
-     <img src="/images/sky.gif"> 
-  
-   
+<body>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><font face="supermarket">Sign Up</font></button>
-</a> 
-</div>
+<p><b>กรุณากรอกข้อมูลเพื่อเข้าสู่หน้าเกม<b></p> 
+
+<!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
+
 <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="container">
-      <label><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+  <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> -->
+  <form class="modal-content animate" action="/our-mysolar">  
+    <div class="container"><h1>คลิ๊กที่นี่เพื่อกลับหน้า home >></h1> 
+      <h3><< คลิ๊กที่นี่เพื่อกลับหน้า home</h3> 
+      <a class="logo" href="/home">
+      <img src="/images/logo.png" width="200" height="auto" title="กลับหน้า home"> 
+     </a>
+      <font face="nithan" color="Black">
+      <label><br><b>ชื่อผู้ใช้งาน</b></label>
+      <input type="text" placeholder="ชื่อผู้ใช้งาน" name="User" required>
 
-      <label><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      <input type="checkbox" checked="checked"> Remember me
+      <label><b>รหัสผ่าน</b></label>
+      <input type="password" placeholder="ใส่รหัสผ่าน" name="Password" required>
+
+      <label><b>ยืนยันรหัสผ่าน</b></label>
+      <input type="password" placeholder="ยืนยันรหัสผ่าน" name="Re-password" required></font>
+
+      <!-- <input type="checkbox" checked="checked"> Remember me
       <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
+ -->
       <div class="clearfix">
-        <button type="button1" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="reset" onclick="document.getElementById('id01').style.display='input'" class="cancelbtn"><font color="white">ล้างข้อความ</button>
+        <button type="submit" class="signupbtn"><font color="white">ลงชื่อเข้าใช้</button>  
       </div>
     </div>
   </form>
- 
 </div>
+
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
 </script>
 
 </body>
