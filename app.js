@@ -23,7 +23,7 @@ const naipController = require('./controllers/naip.controller')
 const nucketController = require('./controllers/nucket.controller')
 const picaController = require('./controllers/pica.controller')
 const welcomeController = require('./controllers/welcome.controller')
-// const signupController = require('./controllers/signup.controller')
+const chooseController = require('./controllers/choose.controller')
 
 /*const short_sunController = require('./controllers/solars_controller/short_sun.controller')
 const short_mercuryController = require('./controllers/solars_controller/short_mercury.controller')
@@ -62,7 +62,7 @@ app.get('/nai-pran',naipController.index)
 app.get('/Look-kai',nucketController.index)
 app.get('/Pigasus',picaController.index)
 app.get('/welcome',welcomeController.index) 
-// app.get('/signup',signupController.index)
+app.get('/choose',chooseController.index)
 
 
 /*app.get('/our-solar-system/short_sun',short_sunController.index)

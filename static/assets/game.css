@@ -1,0 +1,64 @@
+html, body {
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+
+	@-webkit-keyframes typing { from { width: 0; } }
+	@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+
+
+.body h1{
+	position: fixed;
+	z-index: 999px;
+	font-family: supermarket;
+	font-size: 100px;
+	color: #D5C3E8 ;
+	top: 130px;
+	left: 370px;
+
+	border-right: 0em solid pink;
+    width: 16.5em; 
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(21, end),
+    blink-caret .5s step-end infinite alternate;
+}
+
+.body h2 {
+	position: fixed;
+	z-index: 999px;
+	font-family: supermarket;
+	font-size: 40px;
+	color: #EDAC52 ;
+	top: 650px;
+	left: 560px;
+
+}
+
+.enter-button {
+    padding: 45px 100px !important;
+    margin-top: 400px;
+    margin-left: 700px;
+    background-color: #993333 ;
+    border-color: #993333;
+
+}
+
+.easy-button {
+    padding: 40px 65px !important;
+    margin-top: 150px;
+    margin-left: 100px;
+    background-color: #993333 ;
+    border-color: #993333;
+
+}
+
+
+
