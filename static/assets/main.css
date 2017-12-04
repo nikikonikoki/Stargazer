@@ -46,15 +46,14 @@ body {
 .header .navbar-end .sign-in {
 	color: white;
 	position: absolute;
-	left : 1300px;
+	left : 1420px;
 	bottom: 18px;
-
 }
 
 .header .navbar-end .log-in{
 	color: white;
 	position: absolute;
-	left: 1420px;
+	left: 1300px;
 	bottom: 18px;
 }
 
