@@ -1,6 +1,6 @@
 .one  { 
-	position: inherit; 
-	left: 480px;
+	position: absolute; 
+	left: 510px;
 	top: 100px;
 	z-index: 99;
 	width: 100%;
@@ -8,18 +8,18 @@
 }
 
 .two {
-	position: inherit;
-	left: 610px;
-	bottom: -20px;
+	position: absolute;
+	left: 650px;
+	top: 120px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
 }
 
 .tree {
-	position: inherit;
-	left: 720px;
-	top: -30px;
+	position: absolute;
+	left: 760px;
+	bottom: -200px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
@@ -27,9 +27,9 @@
 
 
 .four {
-	position: inherit;
-	left: 750px;
-	top: -20px;
+	position: absolute;
+	left: 800px;
+	top: 340px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
@@ -37,18 +37,18 @@
 
 
 .five {
-	position: inherit;
-	left: 670px;
-	top: 80px;
+	position: absolute;
+	left: 760px;
+	top: 480px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
 }
 
 .six {
-	position: inherit;
-	left: 520px;
-	bottom: 20px;
+	position: absolute;
+	left: 650px;
+	top: 580px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
@@ -56,54 +56,54 @@
 
 
 .seven {
-	position: inherit;
-	left: 370px;
-	top:  -170px;
+	position: absolute;
+	left: 510px;
+	top: 620px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
 }
 
 .eight {
-	position: inherit;
-	left: 290px;
-	bottom: 420px;
+	position: absolute;
+	left: 370px;
+	top: 590px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
 }
 
 .nine {
-	position: inherit;
-	left: 290px;
-	bottom: 690px;
+	position: absolute;
+	left: 280px;
+	top: 480px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
 }
 
 .ten {
-	position: inherit;
-	left: 320px;
-	top: -310px;
+	position: absolute;
+	left: 240px;
+	top: 340px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
 }
 
-/*.eleven {
-	position: inherit;
-	left: 340px;
-	top: 30px;
+.eleven {
+	position: absolute;
+	left: 270px;
+	top: 210px;
 	z-index: 99;
-*/	width: 100%;
+	width: 100%;
 	height: 100%;
 }
 
 .twelve {
-	position: inherit;
-	left:400px;
-	bottom: 1090px;
+	position: absolute;
+	left:370px;
+	top: 120px;
 	z-index: 99;
 	width: 100%;
 	height: 100%;
