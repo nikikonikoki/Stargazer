@@ -1,0 +1,164 @@
+/*planet data .css ver.3*/
+@font-face {
+    font-family: 'le_fontaineregular';
+    src: url('../fonts/lefontaine-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lefontaine-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nithan'; 
+    src: url('../fonts/Nithan.woff2') format('woff2'),
+         url('../fonts/Nithan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}    
+
+@font-face {
+    font-family: 'supermarket';
+    src: url('../fonts/supermarket.woff2') format('woff2'),
+         url('../fonts/supermarket.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TH Sarabun New';
+    src:url('../fonts/thsarabun/THSarabunNew.woff2') format('woff2'),
+        url('../fonts/thsarabun/THSarabunNew.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.piccover{
+  margin-top:135px;
+  margin-left:300px;
+}
+
+.planetengname{
+  margin-top:80px;
+  font-family: 'le_fontaineregular'!important;
+    font-size: 200px;
+    color: #ffffff; 
+}
+
+.planetthainame{
+  font-family: 'supermarket'!important;
+    font-size: 125px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.topichead{
+  margin-top: 100px;
+  font-family: 'supermarket'!important;
+    font-size: 75px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pic{
+  width: 360px;
+} 
+
+
+table{
+  font-family: 'TH Sarabun New' !important;
+  font-size: 23px;
+    color: #000000;
+  background-color: #FAD02E;
+  border: 0 solid !important;
+}
+
+tr{
+  background-color: #FAD02E;
+  border: 0 solid !important;
+}
+
+td{
+  background-color: #FAD02E;
+  border: 0 solid !important;
+}
+ 
+p{
+  font-family: 'TH Sarabun New' !important;
+  font-size: 28px;
+  color: #000000;
+  text-indent: 1.5em;
+  padding-bottom: solid;
+}
+
+
+.righttextbox{
+  border-radius: 15px 50px 30px 5px;
+    background: #FAD02E;
+    padding: 20px; 
+  margin-left:  50px;
+ }
+
+
+.lefttextbox{
+  border-radius: 50px 15px 5px 30px;
+    background: #FAD02E;
+    padding: 20px; 
+    margin-right:  50px;
+ }
+
+.textbox{
+  border-radius: 30px;
+    background: #FAD02E;
+    padding: 20px; 
+  margin-left:100px;
+  margin-right:100px;
+ }
+
+.content{
+  margin-top:100px;
+  margin-right:  100px;
+  margin-left:  100px;
+}
+
+
+.planetpng{
+    width:50px; 
+    margin-top: 160px;
+}
+
+.lineleft{
+  margin-top: 186px;
+  margin-left: 186px;
+  width:555px;
+  height: 1px;
+  background: #a5b8c5;
+}
+
+.lineright{
+  margin-top: 186px;
+  margin-right: 186px;
+  width:555px;
+  height: 1px;
+  background: #a5b8c5;
+}
+
+.piccontent{
+  width: 360px;
+  margin-top: 100px;
+} 
+
+.topichead2{
+  margin-top: 100px;
+  font-family: 'Nithan'!important;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 150px;
+    font-weight: bold;
+}
+
+
+
+

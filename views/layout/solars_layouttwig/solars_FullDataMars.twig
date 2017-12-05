@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ title ?: 'Default title' }}</title>
+  <title>Mars-SolarSystem</title>
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
@@ -11,308 +11,352 @@
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/planet_dataVer2.css">
+  <link rel="stylesheet" type="text/css" href="/assets/planet_dataVer3.css">
   {% block stylesheet %}{% endblock %}
 </head>
 <body>
   {% include 'layout/header.twig' ignore missing %}
       
   <section class="section" style="background-image: url(/images/galaxy1.jpg);width: 100%;height: auto;position:absolute;">
-    <main>
-      <div class="columns" style= "width: 100%; height: auto;" > 
+<main>
 
-      <div class="column is-one-quarter" style="width: 360px; height: auto; margin: 150px 0 150px 300px;">
-        <a href="/our-solar-system"><img src="/images/toon_mars.png" style="width: 360px; height: auto; "></a>
-        
+    <div class="columns"> 
+
+      <div class="piccover">
+        <img src="/images/toon_mars.png" style="height:410px;">
       </div> 
 
-      <div class="column has-text-centered">
-        <div class="container has-text-left" style="  margin: 150px 360px 100px 0; color:white;"> 
-            <h2 style="font-size: 150px  ">Mars</h2><br>
-            <h3 style="font-size: 100px">ดาวอังคาร</h3>
-          </div>
-        
+      <div>
+          <div class="planetengname" style="margin-left:50px;">Mars</div>
+          <div class="planetthainame" style="margin-left:50px;">ดาวอังคาร</div>
       </div>
   
-      </div> <!--header-->
+      </div> <!--headcover-->
+
+      <div class="container" style="width:100px; margin-top: 75px;">
+        <img src="/images/scroll-down2.gif">  
+      </div> <!--scroll-down.gif-->
 
 
-      <div class="columns" style= "width: 100%; height: auto; " >
-        <div class="container has-text-centered" style="width: 100px; height: auto; " >   <!-- picture column -->
-          <img src="/images/scroll-down.png" style="width: 100px; height: auto; ">  
-          </div> <!--separate-->
+      <div class="topichead"> ข้อมูลจำเพาะ </div> <!--topichead-->
+
+
+    <div class="columns content">  <!--content1 ข้อมูลจำเพาะ-->
+      <!-- big column and add margin left right --> 
+
+        <div class="container pic">   <!-- picture  -->
+        <img src="/images/5mars/mar-ani.gif" style="width:360px;">
         </div>
 
+      <div class="righttextbox"> <!-- short data table-->
+          
+          <table>  <!-- short data table-->
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px; ;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+          <tr>
+              <td>ลำดับในระบบสุริยะ :</td>
+              <td>4</td>
+              <td></td>
+              <td>จำนวนวงแหวน :</td>
+              <td> -</td>
+              <td> วง</td>
+            </tr>
 
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/5mars/mar-ani.gif" style="width: 360px; height: auto; ">  
-        </div>
+            <tr>
+              <td>ประเภท :</td>
+              <td>ดาวเคราะห์หิน</td>
+              <td></td>
+              <td>ระยะห่างจากดวงอาทิตย์ :</td>
+              <td>227.94</td>
+              <td>ล้านกิโลเมตร</td>
+            </tr>
 
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
+          <tr>
+              <td>รัศมี :</td>
+              <td>3,397</td>
+              <td>กิโลเมตร</td>
+              <td>เวลาที่หมุนรอบตัวเอง :</td>
+              <td>24.62</td>
+              <td>วัน</td>
+            </tr>
 
-              <table class="table">  <!-- short data table-->
+            <tr>
+              <td>มวล :</td>
+              <td>6.4185 x 10<sup>23</sup></td>
+              <td>กิโลกรัม</td>
+              <td>เวลาที่โคจรรอบดวงอาทิตย์ :</td>
+              <td>1.88 ปี</td>
+              <td>(687 วัน)</td>
+            </tr>
 
-                <tbody>
+            <tr>
+              <td>อุณหภูมิ :</td>
+              <td>-87 ถึง -5</td>
+              <td>องศาเซลเซียส</td>
+              <td>สัญลักษณ์ :</td>
+              <td><img src="/images/5mars/symbol_mars.gif" style="width: 20px;"></td>
+              <td></td>
+            </tr>
 
-                <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >ลำดับในระบบสุริยะ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > 4</td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                    <td class="cellbgcolor" style ="border:0px; " >จำนวนวงแหวน :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > -</td>
-                    <td class="cellbgcolor" style ="border:0px; " > วง</td>
-                  </tr>
+            <tr>
+              <td>จำนวนดาวบริวาร :</td>
+              <td>2</td>
+              <td>ดวง</td>
+              <td>ฉายา :</td>
+              <td>ดาวเคราะห์สีแดง</td>
+              <td></td>
+            </tr>
 
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >ประเภท :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > ดาวเคราห์หิน</td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                    <td class="cellbgcolor" style ="border:0px; " >ระยะห่างจากดวงอาทิตย์ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > 227.94</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ล้านกิโลเมตร</td>
-                  </tr>
+          </table>
 
-                <tr>
-                    <td class="cellbgcolor" style ="border:0px; " > รัศมี :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >3,397</td>
-                    <td class="cellbgcolor" style ="border:0px; " >กิโลเมตร</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ระยะเวลาที่หมุนรอบตัวเอง :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > 24.62 วัน</td>
-                    <td class="cellbgcolor" style ="border:0px; " > วัน</td>
-                  </tr>
+      </div> 
 
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >มวล :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >6.4185x10<sup>23</sup></td>
-                    <td class="cellbgcolor" style ="border:0px; " >กิโลกรัม</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ระยะเวลาที่โคจรรอบดวงอาทิตย์ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >687</td>
-                    <td class="cellbgcolor" style ="border:0px; " >วัน</td>
-                  </tr>
-
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >อุณหภูมิ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >-87 ถึง -5  </td>
-                    <td class="cellbgcolor" style ="border:0px; " >องศาเซลเซียส</td>
-                    <td class="cellbgcolor" style ="border:0px; " >สัญลักษณ์ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " ><img src="/images/5mars/symbol_mars.gif" style="width: 20px; height: auto; "></td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                  </tr>
-
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >จำนวนดาวบริวาร :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >-</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ดวง</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ฉายา :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ดาวเคราะห์สีแดง</td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                  </tr>
+    </div>
 
 
-                </tbody>
+    <div class="columns">
 
-              </table>  
+      <div class="lineleft"></div>
 
+      <div class="container planetpng">
+          <img src="/images/toon_mars.png">  
         </div> 
-      </div>
 
-    </div> <!-- pic left -->
+        <div class="lineright"></div>
 
+
+    </div><!--mars.png-->
+
+
+    <div class="columns content" style="margin-top:150px;">  <!--shortcontent1(content2)-->
+
+      <div class="lefttextbox"> 
+          <p> 
+            ดาวอังคารเป็นดาวเคราะห์ในลำดับที่สี่จากดวงอาทิตย์ และเป็นดาวเคราะห์ลำดับสุดท้ายของดาวเคราะห์หิน บางครั้งมักเรียก<br>ดาวอังคารว่า "ดาวแดง" (Red Planet) เนื่องจากดาวอังคารปรากฏเป็นสีแดงคล้ายสีโลหิต พื้นผิวของดาวอังคารจะมีความแตกต่างระหว่างหุบเหวที่ลึกมากและภูเขาไฟที่สูงมากที่สุดเมื่อเทียบกับดาวเคราะห์อื่นในระบบสุริยะ พื้นผิวของดาวอังคารในปัจจุบัน<br>มีความแห้งแล้งแต่ก็มีหลักฐานที่เชื่อได้ว่าดาวอังคารเคยมีน้ำมาก่อน
+        </p>
+
+        <p>
+          ดาวอังคารมีดาวบริวารหรือดวงจันทร์ขนาดเล็ก 2 ดวง คือ โฟบอส (Phobos) และดีมอส (Deimos) โดยทั้งสองดวงมีรูปร่างบิดเบี้ยวไม่เป็นรูปกลม ซึ่งคาดกันว่าอาจเป็นดาวเคราะห์น้อยที่หลงเข้ามา แล้วดาวอังคารคว้าดึงเอาไว้ให้อยู่ในเขตแรงดึงดูดของตน
+        </p>
+
+      </div> 
+
+        <div class="container pic">   <!-- picture-->
+        <img src="/images/5mars/mar(1).jpg" style="width: 360px;">
+        </div>
+
+    </div>
+
+
+    <div class="columns content">  <!--shortcontent2(content2)-->
+
+      <div class="container pic">   
+        <img src="/images/5mars/mar(3).jpg" style="width: 360px;">
+        </div>
+
+      <div class="righttextbox"> 
+          <table>  <!-- short data table-->
+
+          <tr>
+
+            <td></td>
+            <td>โฟบอส</td>
+            <td></td>
+            <td>ดีมอส</td>
+            <td></td>
+              
+            </tr>
+            
+            <tr>
+            <td>ขนาด</td>
+            <td>27 x 21.6 x 18.8</td>
+            <td>กิโลเมตร</td>
+            <td>10 x 12 x 16 </td>
+            <td>กิโลเมตร</td>
+            </tr>
+
+          <tr>
+              <td>เส้นผ่านศูนย์กลาง</td>
+            <td>22.2</td>
+            <td>กิโลเมตร</td>
+            <td>12.6</td>
+            <td>กิโลเมตร</td>
+            </tr>
+
+            <tr>
+              <td>น้ำหนัก</td>
+            <td>1.08 x 10<sup>16</sup> </td>
+            <td>กิโลกรัม</td>
+            <td>2 x 10<sup>15</sup> </td>
+            <td>กิโลกรัม</td>
+            </tr>
+
+            <tr>
+              <td>ระยะห่างจากดาวอังคาร </td>
+            <td>9,378</td>
+            <td>กิโลเมตร</td>
+            <td>23,400</td>
+            <td>กิโลเมตร</td>
+            </tr>
+
+            <tr>
+              <td>คาบเวลาการโคจร</td>
+            <td>7.66</td>
+            <td>ชั่วโมง</td>
+            <td>30.35</td>
+            <td>ชั่วโมง</td>
+            </tr>
+
+          </table>
+      </div> 
+
+    </div>
 
     
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_mars.png">  
+        </div> 
+
+        <div class="lineright"></div>
 
 
-      <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox" style="border-radius: 50px 15px 5px 30px;">
+    </div><!--mars.png-->
+
+    
+
+    <div class="topichead">การสำรวจ</div> <!--topichead-->
+
+      <div class="container piccontent" style="width: 400px;">   
+        <img src="/images/5mars/mar(8).jpg" style="width: 400px;">
+        </div>
+
+      <div class="content">  <!--content3-->
+
+        <div class="textbox" style="margin-right:120px; margin-left:120px;"> 
+            <p> 
+              ตั้งแต่ที่ยานมารีเนอร์ 4 ไปถึงดาวอังคาร ในปี ค.ศ.1964 ก็มียานจำนวนมากไปยังดาวอังคารในเวลาต่อมา รถหุ่นยนต์ออพพอร์ทูนิตี (Opportunity) และคิวรีออซิตี (Curiosity) ยานสำรวจ 2 ลำบนพื้นผิวดาวกำลังมองหาหลักฐานเกี่ยวกับสิ่งมีชีวิตบนดาวอังคาร
+          </p>
+        </div> 
+
+      </div>
+
+
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_mars.png">  
+        </div> 
+
+        <div class="lineright"></div>
+
+
+    </div><!--mars.png-->
+
+
+    <div class="topichead">วงโคจร</div> <!--topichead-->
+
+
+      <div class="container piccontent" style="width: 500px;">   
+        <img src="/images/5mars/mar(5).jpg" style="width: 500px;">
+        </div>
+
+        <div class="content">  <!--content3-->
+
+        <div class="textbox"> 
+            <p> 
+              วงโคจรของดาวอังคารเป็นวงโคจรที่เป็นวงรีมีจุดใกล้ดวงอาทิตย์ที่สุด (perihelion) ห่างจากดวงอาทิตย์ 207 ล้านกิโลเมตร และจุดไกล<br>ดวงอาทิตย์ที่สุด (aphelion) 249 ล้านกิโลเมตร จึงทำให้อุณหภูมิในช่วงฤดูร้อนและฤดูหนาวมีความแตกต่างกันมาก แกนของดาวอังคารมีความเอียงเช่นเดียวกันกับโลกโดยมีความเอียงประมาณ 25.19 องศา ทำให้ช่วงเวลาหนึ่งแกนขั้วโลกเหนือของดาวอังคารชี้ไปยังดวงอาทิตย์ และอีกช่วงเวลาหนึ่งแกนขั้วโลกใต้ชี้ไปยังดวงอาทิตย์ บนดาวอังคารจึงมีฤดูกาลเช่นเดียวกันกับบนโลกแต่ว่าในแต่ละฤดูกาลจะมีความยาวนานกว่าเนื่องจากเวลา<br>ที่ใช้ในการโคจรรอบดวงอาทิตย์มีความยาวนานกว่าโลกนั่นเอง
+          </p>
+        </div> 
+
+      </div>
+
+
+
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_mars.png">  
+        </div> 
+
+        <div class="lineright"></div>
+
+
+    </div><!--mars.png-->
+
+
+
+    <div class="topichead">โครงสร้าง</div>  <!--topichead-->
       
-          <p class="MessageParagraph">
-           ดาวอังคารเป็นดาวเคราะห์ในลำดับที่สี่จากดวงอาทิตย์ และเป็นดาวเคราะห์ลำดับสุดท้ายของดาวเคราะห์หิน* บางครั้งเรามักเรียกดาวอังคารว่า "ดาวแดง" (Red Planet) เนื่องจากดาวอังคารปรากฏเป็นสีแดงคล้ายสีโลหิต พื้นผิวของดาวอังคารจะมีความแตกต่างระหว่างหุบเหวที่ลึกมากและภูเขาไฟที่สูงมากที่สุดเมื่อเทียบกับดาวเคราะห์อื่นในระบบสุริยะ พื้นผิวของดาวอังคารในปัจจุบันมีความแห้งแล้งแต่ก็มีหลักฐานที่เชื่อได้ว่าดาวอังคารเคยมีน้ำมาก่อน 
-          </p> <br>
-
-          </div> 
+      <div class="container piccontent">   
+        <img src="/images/5mars/mar(6).jpg" style="width: 360px;">
         </div>
 
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/5mars/mar(1).jpg" style="width: 360px; height: auto; ">  
-        </div>
+      <div class="content">  <!--content4-->
 
-    </div> <!-- pic right -->
+        <div class="textbox" style="margin-left:175px; margin-right:175px;"> 
+            <p>
+            ดาวอังคารมีขนาด (รัศมี) ประมาณครึ่งหนึ่งของโลก เนื่องจากดาวอังคารมีมวลและขนาดที่เล็กกว่า ความโน้มถ่วงของ<br>ดาวอังคารจึงมีเพียง 40% ของความโน้มถ่วงโลก และมีระยะห่างจากดวงอาทิตย์มากกว่าโลกซึ่งหมายความว่าดาวอังคาร<br>น่าจะเย็นตัวเร็วกว่าโลก แกนกลางที่เป็นโลหะของดาวอังคารจึงน่าที่จะเป็นของแข็ง แต่เนื่องด้วยความหนาแน่นของดาวอังคารค่อนข้างต่ำเมื่อเมื่อกับดาวเคราะห์หินอื่นๆจึงเชื่อได้ว่าแกนของดาวอังคารน่าจะมีส่วนผสมของซัลเฟอร์ (sulphur) อยู่ในรูปของไอออนซัลไฟด์ (iron sulphide) 
+          </p> 
 
+          <p>
+            รอบๆแกนของดาวอังคารจะเป็นชั้นแมนเทิลที่มีความหนามากเมื่อเทียบกับแกน โดยประกอบด้วยหินซิลิเกตเป็นหลัก <br>ส่วนเปลือกที่เป็นหินชั้นนอกสุดของดาวอังคารจะมีความหนาประมาณ 80 กิโลเมตรในซีกโลกใต้ แต่จะมีความหนาเพียง 35 กิโลเมตรในซีกโลกเหนือ
+          </p>
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/5mars/mar(2).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-      <div class="textbox">
-           <p class="MessageParagraph">
-           ใดาวเคราะห์ที่มีพื้นผิวชัดเจน (terrestrial planet) หรือ ดาวเคราะห์หิน (rocky planet) ในระบบสุริยะประกอบด้วยดาวเคราะห์ 4 ดวงคือ ดาวพุธ ดาวศุกร์ โลก และ ดาวอังคาร
-          </p> <br>
-
+          <p>
+            ดาวอังคารเป็นดาวเคราะห์ที่มีภูเขาไฟที่ใหญ่ที่สุดในระบบสุริยะ  คือ โอลิมปัส มอนส์ (Olympus Mons) และหุบเหว<br>ที่ใหญ่ที่สุดในระบบสุริยะ  คือ วัลเลส มารีเนอริส (Valles Marineris)  และที่ขั้วของดาวอังคารมีขั้วน้ำแข็งที่ประกอบด้วยน้ำแข็ง
+          </p>
         </div> 
+
       </div>
 
-    </div> <!-- pic left -->
+  
 
-        <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+    <div class="columns">
 
+      <div class="lineleft"></div>
 
-      <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox" style="border-radius: 50px 15px 5px 30px;">
-      
-          <p class="MessageParagraph">
-           ดาวอังคารมีดาวบริวารหรือดวงจันทร์ขนาดเล็ก 2 ดวง คือ โฟบอส (Phobos) และดีมอส (Deimos) โดยทั้งสองดวงมีรูปร่างบิดเบี้ยวไม่เป็นรูปกลม ซึ่งคาดกันว่าอาจเป็นดาวเคราะห์น้อยที่หลงเข้ามาแล้วดาวอังคารคว้าดึงเอาไว้ให้อยู่ในเขตแรงดึงดูดของตน
-          </p> <br>
+      <div class="container planetpng">
+          <img src="/images/toon_mars.png">  
+        </div> 
 
-          </div> 
-        </div>
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/5mars/mar(3).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-    </div> <!-- pic right -->
+        <div class="lineright"></div>
 
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
-      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
-        <img src="/images/toon_mars.png" style="width: 120px; height: auto; ">  
-        </div> <!--separate-->
-      </div>
+    </div><!--mars.png-->
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-        <div class="column is-2">
-          <div class="textboxheader">
-            <h2>วงโคจร</h2> 
-          </div>
-        </div>
-    </div> <!--header-->
-      
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+    <div class="topichead">ชั้นบรรยากาศ</div> <!--topichead-->
 
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/5mars/mar(5).jpg" style="width: 360px; height: auto; ">  
-        </div>
+      <div class="container piccontent">   
+        <img src="/images/5mars/mar(7).jpg" style="width: 360px;">
+        </div> 
 
-        <div class="column is-8"> <!-- short data column is auto -->
+      <div class="content"> <!--content5--> 
         <div class="textbox">
-             <p class="MessageParagraph">
-            วงโคจรของดาวอังคารเป็นวงโคจรที่เป็นวงรีมีจุดใกล้ดวงอาทิตย์ที่สุด(perihelion) ห่างจากดวงอาทิตย์ 207 ล้านกิโลเมตร และจุดไกลดวงอาทิตย์ที่สุด(aphelion) 249 ล้านกิโลเมตร จึงทำให้อุณหภูมิในช่วงฤดูร้อนและฤดูหนาวมีความแตกต่างกันมาก แกนของดาวอังคารมีความเอียงเช่นเดียวกันกับโลกโดยมีความเอียงประมาณ 25.19 องศา ทำให้ช่วงเวลาหนึ่งแกนขั้วโลกเหนือของดาวอังคารชี้ไปยังดวงอาทิตย์ และอีกช่วงเวลาหนึ่งแกนขั้วโลกใต้ชี้ไปยังดวงอาทิตย์ บนดาวอังคารจึงมีฤดูกาลเช่นเดียวกันกับบนโลกแต่ว่าในแต่ละฤดูกาลจะมีความยาวนานกว่าเนื่องจากเวลาที่ใช้ในการโคจรรอบดวงอาทิตย์มีความยาวนานกว่าโลกนั่นเอง
-          </p> <br>
+            <p> 
+              ชั้นบรรยากาศของดาวอังคารค่อนข้างเบาบางมาก มีความดันบรรยากาศเฉลี่ยที่พื้นผิวเพียง 0.6 เปอร์เซนต์เมื่อเทียบกับโลก ชั้นบรรยากาศ<br>ประกอบด้วยแก๊สคาร์บอนไดออกไซด์เป็นหลักประมาณ 95.3 เปอร์เซนต์ มีแก๊สไนโตรเจนและอาร์กอน ประมาณ 2.7 และ 1.6 เปอร์เซนต์ตามลำดับ นอกนั้นจะเป็นแก๊สอื่นๆ
+          </p> 
 
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
-      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
-        <img src="/images/toon_mars.png" style="width: 120px; height: auto; ">  
-        </div> <!--separate-->
-      </div>
-
-
-
-
-      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-        <div class="column is-2">
-          <div class="textboxheader">
-            <h2>โครงสร้าง</h2>
-          </div>
+          <p >
+            การที่เราเห็นดาวอังคารมีสีแดง (ความจริงจะเห็นเป็นสีค่อนไปทางส้มอมชมพู) เนื่องจากมีฝุ่นของไอออนออกไซด์ (iron oxide) หรือที่เรารู้จักกันว่าเป็น สนิมเหล็ก อากาศบนดาวอังคารจะมีความแปรปรวนสูงมาก โดยในช่วงฤดูร้อนของซีกโลกใต้ ลมจะพัดจากซีกโลกใต้ที่ร้อนกว่าไปยังซีกโลกเหนือ ซึ่งจะพัดพาเอาฝุ่นละอองต่างๆขึ้นไปสูงได้ถึง 1 กิโลเมตร ซึ่งพายุฝุ่นที่เกิดขึ้นนี้จะปกคลุมพื้นที่ส่วนใหญ่ของดาวอังคารเลยทีเดียว และพายุฝุ่นที่พัดมานานหลายศตวรรษนั้น ทำให้พื้นผิวของดาวอังคารมีลักษณะเป็นแนวสันของหิน (yardangs or rock ridges) อย่างที่เป็นอยู่ในปัจจุบัน
+          </p> 
         </div>
-      </div> <!--header-->
-        
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-          <img src="/images/5mars/mar(6).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
-          <p class="MessageParagraph">
-            ดาวอังคารมีขนาด(รัศมี)ประมาณครึ่งหนึ่งของโลก เนื่องจากดาวอังคารมีมวลและขนาดที่เล็กกว่า ความโน้มถ่วงของดาวอังคารจึงมีเพียง 40% ของความโน้มถ่วงโลก และมีระยะห่างจากดวงอาทิตย์มากกว่าโลกซึ่งหมายความว่าดาวอังคารน่าจะเย็นตัวเร็วกว่าโลก แกนกลางที่เป็นโลหะของดาวอังคารจึงน่าที่จะเป็นของแข็ง แต่เนื่องด้วยความหนาแน่นของดาวอังคารค่อนข้างต่ำเมื่อเมื่อกับดาวเคราะห์หินอื่นๆจึงเชื่อได้ว่าแกนของดาวอังคารน่าจะมีส่วนผสมของซัลเฟอร์(sulphur) อยู่ในรูปของไอออนซัลไฟด์ (iron sulphide) 
-          </p> <br>
-
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-          <img src="/images/5mars/mar(8).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
-          <p class="MessageParagraph">
-            รอบๆแกนของดาวอังคารจะเป็นชั้นแมนเทิลที่มีความหนามากเมื่อเทียบกับแกน โดยประกอบด้วยหินซิลิเกตเป็นหลัก ส่วนเปลือกที่เป็นหินชั้นนอกสุดของดาวอังคารจะมีความหนาประมาณ 80 กิโลเมตรในซีกโลกใต้ แต่จะมีความหนาเพียง 35 กิโลเมตรในซีกโลกเหนือ
-          </p> <br>
-          <p class="MessageParagraph">
-            ดาวอังคารเป็นดาวเคราะห์ที่มีภูเขาไฟที่ใหญ่ที่สุด (ชื่อว่า โอลิมปัส มอนส์ (Olympus Mons)) และหุบเหวที่ใหญ่ที่สุด (ชื่อว่า วัลเลส มารีเนอริส (Valles Marineris)) ในระบบสุริยะ และที่ขั้วของดาวอังคารมีขั้วน้ำแข็งที่ประกอบด้วยน้ำแข็ง
-          </p> <br>
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
+      </div> 
 
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
-      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
-        <img src="/images/toon_mars.png" style="width: 120px; height: auto; ">  
-        </div> <!--separate-->
-      </div>
+    <div class="container planetpng" style="width:120px;">
+        <img src="/images/toon_mars.png" style="margin-bottom:200px">  
+      </div> <!--mars.png-->
 
-
-
-      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-        <div class="column is-2">
-          <div class="textboxheader">
-            <h2>ชั้นบรรยากาศ</h2> 
-          </div>
-        </div>
-      </div><!--header-->
-
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-          <img src="/images/5mars/mar(7).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
-          <p class="MessageParagraph">
-            ชั้นบรรยากาศของดาวอังคารค่อนข้างเบาบางมากคือมีความดันบรรยากาศเฉลี่ยที่พื้นผิวเพียง 0.6 เปอร์เซนต์เมื่อเทียบกับโลก ชั้นบรรยากาศจะประกอบด้วยแก๊สคาร์บอนไดออกไซด์เป็นหลักประมาณ 95.3 เปอร์เซนต์ มีแก๊สไนโตรเจนและอาร์กอน ประมาณ 2.7 และ 1.6 เปอร์เซนต์ตามลำดับ นอกนั้นจะเป็นแก๊สอื่นๆ
-          </p> <br>
-          <p class="MessageParagraph">
-            การที่เราเห็นดาวอังคารมีสีแดง (ความจริงจะเห็นเป็นสีค่อนไปทางส้มอมชมพู) เนื่องจากมีฝุ่นของไอออนออกไซด์ (iron oxide) หรือที่เรารู้จักกันว่าเป็น สนิมเหล็ก อากาศบนดาวอังคารจะมีความแปรปรวนสูงมาก โดยในช่วงฤดูร้อนของซีกโลกใต้ ลมจะพัดจากซีกโลกใต้ที่ร้อนกว่าไปยังซีกโลกเหนือ ซึ่งจะพัดพาเอาฝุ่นละอองต่างๆขึ้นไปสูงได้ถึง 1 กิโลเมตร ซึ่งพายุฝุ่นที่เกิดขึ้นนี้จะปกคลุมพื้นที่ส่วนใหญ่ของดาวอังคารเลยทีเดียว และพายุฝุ่นนี่เองที่พัดมานานหลายศตวรรษทำให้พื้นผิวของดาวอังคารมีลักษณะเป็นแนวสันของหิน (yardangs or rock ridges) อย่างที่เป็นอยู่ในปัจจุบัน
-          </p> <br>
-
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-    </main> 
+     
+</main>
   </section>
 
   {% block content %}{% endblock %}

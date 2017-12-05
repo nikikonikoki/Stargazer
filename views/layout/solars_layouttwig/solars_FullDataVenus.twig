@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ title ?: 'Default title' }}</title>
+  <title>Venus-SolarSystem</title>
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
@@ -11,352 +11,371 @@
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/planet_dataVer2.css">
+  <link rel="stylesheet" type="text/css" href="/assets/planet_dataVer3.css">
   {% block stylesheet %}{% endblock %}
 </head>
 <body>
   {% include 'layout/header.twig' ignore missing %}
       
   <section class="section" style="background-image: url(/images/galaxy1.jpg);width: 100%;height: auto;position:absolute;">
-    <main>
-      
-    <div class="columns" style= "width: 100%; height: auto;" > 
+    
+  <main>
 
-      <div class="column is-one-quarter" style="width: 360px; height: auto; margin: 150px 0 150px 300px;">
-        <a href="/our-solar-system"><img src="/images/toon_venus.png" style="width: 360px; height: auto; "></a>
-        
+    <div class="columns"> 
+
+      <div class="piccover">
+        <img src="/images/toon_venus.png" style="height:410px;">
       </div> 
 
-      <div class="column has-text-centered">
-        <div class="container has-text-left" style="  margin: 150px 360px 100px 0; color:white;"> 
-            <h2 style="font-size: 150px  ">Venus</h2><br>
-            <h3 style="font-size: 100px">ดาวศุกร์</h3>
-          </div>
-        
+      <div>
+          <div class="planetengname" style="margin-left:50px;">Venus</div>
+          <div class="planetthainame" style="margin-left:50px;">ดาวศุกร์</div>
       </div>
   
-      </div> <!--header-->
+      </div> <!--headcover-->
+
+      <div class="container" style="width:100px; margin-top: 75px;">
+        <img src="/images/scroll-down2.gif">  
+      </div> <!--scroll-down.gif-->
 
 
-      <div class="columns" style= "width: 100%; height: auto; " >
-        <div class="container has-text-centered" style="width: 100px; height: auto; " >   <!-- picture column -->
-          <img src="/images/scroll-down.png" style="width: 100px; height: auto; ">  
-          </div> <!--separate-->
+      <div class="topichead"> ข้อมูลจำเพาะ </div> <!--topichead-->
+
+
+    <div class="columns content">  <!--content1 ข้อมูลจำเพาะ-->
+      <!-- big column and add margin left right --> 
+
+        <div class="container pic">   <!-- picture  -->
+        <img src="/images/3venus/ven-ani.gif" style="width:360px;">
         </div>
 
+      <div class="righttextbox"> <!-- short data table-->
+          
+          <table>  <!-- short data table-->
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px; ;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+          <tr>
+              <td>ลำดับในระบบสุริยะ:</td>
+              <td>2</td>
+              <td></td>
+              <td>จำนวนวงแหวน :</td>
+              <td>-</td>
+              <td>วง</td>
+            </tr>
 
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven-ani.gif" style="width: 360px; height: auto; ">  
+            <tr>
+              <td>ประเภท :</td>
+              <td>ดาวเคราะห์หิน</td>
+              <td></td>
+              <td>ระยะห่างจากดวงอาทิตย์ :</td>
+              <td>108.21</td>
+              <td>ล้านกิโลเมตร</td>
+            </tr>
+
+          <tr>
+              <td>รัศมี :</td>
+              <td>6,052</td>
+              <td>กิโลเมตร</td>
+              <td>เวลาที่หมุนรอบตัวเอง :</td>
+              <td>243.02</td>
+              <td>วัน</td>
+            </tr>
+
+            <tr>
+              <td>มวล :</td>
+              <td>4.8685 x 10<sup>24</sup></td>
+              <td>กิโลกรัม</td>
+              <td>เวลาที่โคจรรอบดวงอาทิตย์ :</td>
+              <td>224.7</td>
+              <td>วัน</td>
+            </tr>
+
+            <tr>
+              <td>อุณหภูมิ :</td>
+              <td>464</td>
+              <td>องศาเซลเซียส</td>
+              <td>สัญลักษณ์ :</td>
+              <td><img src="/images/3venus/symbol_venus.gif" style="width: 20px;"></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>จำนวนดาวบริวาร :</td>
+              <td>-</td>
+              <td>ดวง</td>
+              <td>ฉายา :</td>
+              <td>ฝาแฝดของโลก</td>
+              <td></td>
+            </tr>
+
+          </table>
+
+      </div> 
+
+    </div>
+
+
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_venus.png">  
+        </div> 
+
+        <div class="lineright"></div>
+
+
+    </div><!--venus.png-->
+
+
+    <div class="columns content" style="margin-top:150px;">  <!--shortcontent1(content2)-->
+
+      <div class="lefttextbox"> 
+          <p> 
+            ดาวศุกร์เป็นดาวดวงที่สองในระบบสุริยะและเป็นดาวเคราะห์ในระบบสุริยะที่มีความคล้ายคลึงกับโลกมากที่สุดในเรื่องของขนาด มวล และความหนาแน่น บางคนจึงเรียกดาวศุกร์ว่าดาวฝาแฝดหรือดาวน้องสาวของโลก แต่ดาวศุกร์ก็มีความแตกต่างจากโลกอย่างสิ้นเชิงในเรื่องของชั้นบรรยากาศที่มีความหนาแน่นสูงและเต็มไปด้วยแก๊สคาร์บอนไดออกไซด์ กลุ่มเมฆที่ประกอบไปด้วย<br>กรดซัลฟิวริก และอุณหภูมิที่ร้อนจัดถึง 464 องศาเซลเซียสซึ่งสูงที่สุดเมื่อเทียบกับดาวเคราะห์อื่นในระบบสุริยะ
+        </p>
+
+      </div> 
+
+        <div class="container pic">   <!-- picture-->
+        <img src="/images/3venus/ven(1).jpg" style="width: 360px;">
         </div>
 
-        <div class="column is-8"> <!-- short data column is auto -->
-          <div class="textbox">
-              <table class="table">  <!-- short data table-->
-                <tbody>
-                <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >ลำดับในระบบสุริยะ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > 2</td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                    <td class="cellbgcolor" style ="border:0px; " >จำนวนวงแหวน :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > -</td>
-                    <td class="cellbgcolor" style ="border:0px; " > วง</td>
-                  </tr>
+    </div>
 
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >ประเภท :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > ดาวเคราห์หิน</td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                    <td class="cellbgcolor" style ="border:0px; " >ระยะห่างจากดวงอาทิตย์ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > 108.21</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ล้านกิโลเมตร</td>
-                  </tr>
 
-                <tr>
-                    <td class="cellbgcolor" style ="border:0px; " > รัศมี :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >6,052</td>
-                    <td class="cellbgcolor" style ="border:0px; " >กิโลเมตร</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ระยะเวลาที่หมุนรอบตัวเอง :</td>
-                    <td class="cellbgcolor" style ="border:0px; " > 243.02</td>
-                    <td class="cellbgcolor" style ="border:0px; " > วัน</td>
-                  </tr>
+    <div class="columns content">  <!--shortcontent2(content2)-->
 
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >มวล :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >4.8685x10<sup>24</sup></td>
-                    <td class="cellbgcolor" style ="border:0px; " >กิโลกรัม</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ระยะเวลาที่โคจรรอบดวงอาทิตย์ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >224.70</td>
-                    <td class="cellbgcolor" style ="border:0px; " >วัน</td>
-                  </tr>
+      <div class="container pic">   
+        <img src="/images/3venus/ven(2).jpg" style="width: 360px;">
+        </div>
 
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >อุณหภูมิ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >464 </td>
-                    <td class="cellbgcolor" style ="border:0px; " >องศาเซลเซียส</td>
-                    <td class="cellbgcolor" style ="border:0px; " >สัญลักษณ์ :</td>
-                    <td class="cellbgcolor" style ="border:0px; " ><img src="/images/3venus/symbol_venus.gif" style="width: 20px; height: auto; "></td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                  </tr>
+      <div class="righttextbox"> 
+          <p> 
+            เมื่อเราสังเกตดูท้องฟ้า ดาวศุกร์จะเป็นดาวที่มีความสว่างมากที่สุด (ถ้าไม่นับดวงอาทิตย์และดวงจันทร์) เนื่องจาก<br>ดาวศุกร์อยู่ใกล้ดวงอาทิตย์มากกว่าโลกเราจึงเห็นดาวศุกร์ได้ในช่วงหัวค่ำและช่วงก่อนรุ่งสางเท่านั้นคือมีระยะห่างเชิงมุม <br>(มองจากโลก) ไม่เกิน 47.8 องศา เราเรียกดาวศุกร์เมื่อปรากฏในช่วงหัวค่ำว่า ดาวประจำเมือง(evening star)<br> ส่วนเมื่อปรากฏในช่วงก่อนรุ่งสางเราเรียกว่า ดาวประกายพรึก (morning star)  
+        </p>
+      </div> 
 
-                  <tr>
-                    <td class="cellbgcolor" style ="border:0px; " >จำนวนดาวบริวาร :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >-</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ดวง</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ฉายา :</td>
-                    <td class="cellbgcolor" style ="border:0px; " >ฝาแฝดของโลก</td>
-                    <td class="cellbgcolor" style ="border:0px; " ></td>
-                  </tr>
-                </tbody>
-              </table>  
-          </div> 
+    </div>
+
+
+    <div class="columns content" style="margin-top:150px;">  <!--shortcontent3(content2)-->
+
+      <div class="lefttextbox"> 
+          <p> 
+            ดาวศุกร์เป็นดาวเคราะห์เพียงดวงเดียวในระบบสุริยะที่มีคาบเวลาการหมุนรอบตัวเอง (243 วันของโลก) นานกว่า<br>คาบเวลาการโคจรรอบดวงอาทิตย์ (225 วันของโลก) การหมุนรอบตัวเองของดาวศุกร์ทุกๆ 1/8 รอบ ดาวศุกร์จะโคจร<br>รอบดวงอาทิตย์ได้ประมาณ 1/7 รอบ การหมุนเช่นนี้ทำให้ 1 วัน (ของดาวศุกร์) มีค่าประมาณ 117 วัน (ของโลก)<br> นั่นหมายถึงว่า 1 วันของดาวศุกร์มีค่าน้อยกว่าเวลาการหมุนรอบตัวเองของดาวศุกร์เสียอีก โดยระยะเวลา 1 ปี <br>(ของดาวศุกร์) มีค่าประมาณ 1.9 วัน (ของดาวศุกร์)
+        </p>
+
+      </div> 
+
+        <div class="container pic">   <!-- picture-->
+        <img src="/images/3venus/ven(3).jpg" style="width: 360px;">
+        </div>
+
+    </div>
+
+
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_venus.png">  
+        </div> 
+
+        <div class="lineright"></div>
+
+
+    </div><!--venus.png-->
+
+    
+
+    <div class="topichead">ปรากฏการณ์ดาวศุกร์ผ่านหน้าดวงอาทิตย์<br>(Transit of Venus)</div> <!--topichead-->
+
+      <div class="container piccontent">   
+        <img src="/images/3venus/ven(4).jpg" style="width: 360px;">
+        </div>
+
+      <div class="content">  <!--content3-->
+
+        <div class="textbox" style="margin-right:120px; margin-left:120px;"> 
+            <p> 
+              เนื่องจากดาวศุกร์อยู่ระหว่างโลกกับดวงอาทิตย์ ทำให้เมื่อดาวศุกร์โคจรมาอยู่ในแนวเส้นตรงระหว่างโลกกับดวงอาทิตย์ คนบนโลกจะเห็นดาวศุกร์เป็นวงกลมดำบนพื้นผิวดวงอาทิตย์ เรียกว่า ดาวศุกร์ผ่านหน้าดวงอาทิตย์ ซึ่งเกิดไม่บ่อยนัก โดยจะเกิดเป็นคู่ห่างกันประมาณ 8 ปี ใน 1 ศตวรรษจะมีเกิด 1 คู่ เช่น คู่ที่เกิดในคริสต์ศตวรรษที่ 17 คือในปี ค.ศ. 1631 และ 1639 คู่ที่เกิดในคริสต์ศตวรรษที่ 18 คือในปี ค.ศ. 1761 และ 1769 คู่ที่เกิดในคริสต์ศตวรรษที่ 19 คือในปี ค.ศ. 1874 และ 1882 คู่ที่เกิดในคริสต์ศตวรรษที่ 21 คือในปี ค.ศ. 2004 และ 2012 โดยในปี ค.ศ.2012 นั้นจะเกิดขึ้นในวันที่ 6 มิถุนายน 
+          </p>
+        </div> 
+
       </div>
 
-    </div> <!-- pic left -->
+      <div class="container piccontent" style="width:400px;">   
+        <img src="/images/3venus/ven(5).gif" style="width:400px;">
+        </div>
 
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+    
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_venus.png">  
+        </div> 
+
+        <div class="lineright"></div>
 
 
-      <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox" style="border-radius: 50px 15px 5px 30px;">
+    </div><!--venus.png-->
+
+    
+
+    <div class="topichead">การสำรวจ</div> <!--topichead-->
+
+        <div class="content">  <!--content4-->
+
+        <div class="textbox" style="margin-right:120px; margin-left:120px;"> 
+            <p> 
+              ถึงแม้ชั้นเมฆหนาทึบจะคอยบดบังไม่ให้เห็นพื้นผิวดาวศุกร์ที่อยู่ใต้ลงไปได้ แต่ก็สามารถทำแผนที่ดาวศุกร์โดยการใช้เรดาร์ได้ ในแผนที่<br>แสดงภูเขาไฟจำนวนมากและหลุมอุกกาบาตขนาดใหญ่บนดาวศุกร์ ซึ่งไม่มีหลุมอุกกาบาตที่มีความกว้างน้อยกว่า 3 กิโลเมตรเลย เนื่องจาก<br>ดาวตกขนาดเล็กมักถูกเผาไหม้จนหมดไปในชั้นเมฆหนาทึบก่อนที่จะถึงพื้นผิวดาวศุกร์
+          </p>
+        </div> 
+
+      </div>
+
+
+      <div class="container piccontent" style="width: 500px;">   
+        <img src="/images/3venus/ven(6).jpg" style="width: 500px;">
+        </div>
+
+
+      <div class="content">  <!--content4-->
+
+        <div class="textbox" style="margin-right:120px; margin-left:120px;"> 
+            <p> 
+              อดีตสหภาพโซเวียต สหรัฐฯ องค์การอวกาศยุโรป และญี่ปุ่นได้ส่งยานไปสำรวจดาวศุกร์ ตั้งแต่ยานมารีเนอร์ 2 (Mariner 2) ยานลำแรก<br>ที่สำรวจดาวศุกร์ในปี ค.ศ.1962 จากนั้นก็มียานไปสำรวจดาวศุกร์มากกว่า 25 ลำ โดยยานลำแรกที่โคจรรอบดาวศุกร์ คือ ยานมาเจลลัน (Magellan) ซึ่งทำภาพและแผนที่พื้นผิวดาวศุกร์ด้วยเรดาร์    
+          </p>
+        </div> 
+
+      </div>
+
+
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_venus.png">  
+        </div> 
+
+        <div class="lineright"></div>
+
+
+    </div><!--venus.png-->
+
+    <div class="topichead">วงโคจร</div> <!--topichead-->
+
+
+      <div class="container piccontent" style="width: 500px;">   
+        <img src="/images/3venus/ven(7).jpg" style="width: 500px;">
+        </div>
+
+        <div class="content">  <!--content5-->
+
+        <div class="textbox"> 
+
+          <p>
+            วงโคจรของดาวศุกร์มีความใกล้เคียงกับวงกลมมาก มีจุดใกล้ดวงอาทิตย์ที่สุด(perihelion) 107.5 ล้านกิโลเมตร และจุดไกลดวงอาทิตย์ที่สุด (aphelion) 108.9 ล้านกิโลเมตร ดาวศุกร์เป็นดาวเคราะห์ที่ไม่มีฤดูกาลเช่นเดียวกับดาวพุธ ด้วยเหตุที่ว่าระนาบการโคจรกับระนาบของ<br>เส้นผ่านศูนย์กลางของดาวศุกร์เกือบเป็นระนาบเดียวกัน
+          </p>
+        </div>
+      </div>
+
+      <div class="container piccontent" >   
+        <img src="/images/3venus/ven(8).jpg" style="width: 360px;">
+        </div>
+
+        <div class="content"> <!--content5-->
+
+        <div class="textbox"> 
+            <p> 
+              นอกจากนี้ดาวศุกร์เป็นหนึ่งในสองดาวเคราะห์ในระบบสุริยะ (ดาวเคราะห์อีกดวงคือยูเรนัส) ที่มีทิศทางการหมุนรอบตัวเองกับทิศทาง<br>การโคจรรอบดวงอาทิตย์ที่ต่างกัน คือมีทิศทางการโคจรรอบดวงอาทิตย์ในลักษณะทวนเข็มนาฬิกา ส่วนทิศทางการหมุนรอบตัวเองมีลักษณะไปตามเข็มนาฬิกา
+          </p>
+        </div> 
+      </div>
       
-            <p class="MessageParagraph">
-            ดาวศุกร์เป็นดาวดวงที่สองในระบบสุริยะและเป็นดาวเคราะห์ในระบบสุริยะที่มีความคล้ายคลึงกับโลกมากที่สุดในเรื่องของขนาด มวล และความหนาแน่น บางคนจึงเรียกดาวศุกร์ว่าดาวฝาแฝดหรือดาวน้องสาวของโลก แต่ดาวศุกร์ก็มีความแตกต่างจากโลกอย่างสิ้นเชิงในเรื่องของชั้นบรรยากาศที่มีความหนาแน่นสูงและเต็มไปด้วยแก๊สคาร์บอนไดออกไซด์ กลุ่มเมฆที่ประกอบไปด้วยกรดซัลฟุริก และอุณหภูมิที่ร้อนจัดถึง 464 องศาเซลเซียสซึ่งสูงที่สุดเมื่อเทียบกับดาวเคราะห์อื่นในระบบสุริยะ
-          </p> <br> 
 
-          </div> 
-        </div>
 
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(1).jpg" style="width: 360px; height: auto; ">  
-        </div>
 
-    </div> <!-- pic right -->
+    <div class="columns">
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+      <div class="lineleft"></div>
 
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(2).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-      <div class="textbox">
-             <p class="MessageParagraph">
-            เมื่อเราสังเกตดูท้องฟ้า ดาวศุกร์จะเป็นดาวที่มีความสว่างมากที่สุด(ถ้าไม่นับดวงอาทิตย์และดวงจันทร์) เนื่องจากดาวศุกร์อยู่ใกล้ดวงอาทิตย์มากกว่าโลกเราจึงเห็นดาวศุกร์ได้ในช่วงหัวค่ำและช่วงก่อนรุ่งสางเท่านั้นคือมีระยะห่างเชิงมุม (มองจากโลก) ไม่เกิน 47.8 องศา เราเรียกดาวศุกร์เมื่อปรากฏในช่วงหัวค่ำว่า ดาวประจำเมือง(evening star) ส่วนเมื่อปรากฏในช่วงก่อนรุ่งสางเราเรียกว่า ดาวประกายพรึก (morning star) 
-          </p> <br>
-
+      <div class="container planetpng">
+          <img src="/images/toon_venus.png">  
         </div> 
-      </div>
 
-    </div> <!-- pic left -->
-
-<div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
+        <div class="lineright"></div>
 
 
-      <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox" style="border-radius: 50px 15px 5px 30px;">
+    </div><!--venus.png-->
+
+
+
+    <div class="topichead">โครงสร้าง</div>  <!--topichead-->
       
-            <p class="MessageParagraph">
-            ดาวศุกร์เป็นดาวเคราะห์เพียงดวงเดียวในระบบสุริยะที่มีคาบเวลาการหมุนรอบตัวเอง(243 วันของโลก)นานกว่าคาบเวลาการโคจรรอบดวงอาทิตย์(225 วันของโลก) การหมุนรอบตัวเองของดาวศุกร์ทุกๆ 1/8 รอบ ดาวศุกร์จะโคจรรอบดวงอาทิตย์ได้ประมาณ 1/7 รอบ การหมุนเช่นนี้ทำให้ 1 วัน(ของดาวศุกร์) มีค่าประมาณ 117 วัน(ของโลก) นั่นหมายถึงว่า 1 วันของดาวศุกร์มีค่าน้อยกว่าเวลาการหมุนรอบตัวเองของดาวศุกร์เสียอีก โดยระยะเวลา 1 ปี(ของดาวศุกร์) มีค่าเท่ากับประมาณ 1.9 วัน(ของดาวศุกร์)
-          </p> <br> 
-
-          </div> 
+      <div class="container piccontent" style="width: 400px;">   
+        <img src="/images/3venus/ven(9).jpg" style="width: 400px;">
         </div>
 
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(3).jpg" style="width: 360px; height: auto; ">  
-        </div>
+      <div class="content">  <!--content6-->
 
-    </div> <!-- pic right -->
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(4).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-      <div class="textbox">
-             <p class="MessageParagraph">
-            เนื่องจากดาวศุกร์อยู่ระหว่างโลกกับดวงอาทิตย์ ทำให้เมื่อดาวศุกร์โคจรมาอยู่ในแนวเส้นตรงระหว่างโลกกับดวงอาทิตย์ คนบนโลกจะเห็นดาวศุกร์เป็นวงกลมดำบนพื้นผิวดวงอาทิตย์ เรียกว่า ดาวศุกร์ผ่านหน้าดวงอาทิตย์ ซึ่งเกิดไม่บ่อยนัก โดยจะเกิดเป็นคู่ห่างกันประมาณ 8 ปี ใน 1 ศตวรรษจะมีเกิด 1 คู่ เช่น คู่ที่เกิดในคริสต์ศตวรรษที่ 17 คือในปี ค.ศ. 1631 และ 1639 คู่ที่เกิดในคริสต์ศตวรรษที่ 18 คือในปี ค.ศ. 1761 และ 1769 คู่ที่เกิดในคริสต์ศตวรรษที่ 19 คือในปี ค.ศ. 1874 และ 1882 คู่ที่เกิดในคริสต์ศตวรรษที่ 21 คือในปี ค.ศ. 2004 และ 2012 โดยในปี ค.ศ.2012 นั้นจะเกิดขึ้นในวันที่ 6 มิถุนายน
-          </p> <br>
-
+        <div class="textbox" style="margin-left:175px; margin-right:175px;"> 
+            <p>
+            ดาวศุกร์เป็นดาวที่มีขนาดและมวลที่ใกล้เคียงกับโลกมากนักวิทยาศาสตร์จึงเชื่อว่าโครงสร้างของดาวศุกร์มีความคล้ายคลึงกับโลก โดยแกนชั้นใน (inner core) ประกอบไปด้วยเหล็กและนิกเกิลแข็ง ส่วนแกนชั้นนอก (outer core) เป็นเหล็กและนิกเกิลเหลว แต่ไม่ปรากฏว่าไม่สามารถวัดสนามแม่เหล็กของดาวศุกร์ได้ ทั้งนี้เนื่องจากดาวศุกร์มีการหมุนรอบตัวเองที่ช้ามากเมื่อเทียบกับโลกจึงไม่สามารถทำให้โลหะเหลวในแกนชั้นนอกเกิดการหมุนเวียน (circulation) ได้ จึงไม่ทำให้เกิดสนามแม่เหล็ก <br>ในส่วนของชั้นแมนเทิลจะเป็นหินและชั้นเปลือกจะประกอบด้วยซิลิเกตเป็นหลัก พื้นผิวของดาวศุกร์จึงมีความแห้งแล้งและร้อนกว่าดาวเคราะห์อื่น ๆ ในระบบสุริยะ 
+          </p> 
+          
         </div> 
+
       </div>
 
-    </div> <!-- pic left -->
+  
+
+    <div class="columns">
+
+      <div class="lineleft"></div>
+
+      <div class="container planetpng">
+          <img src="/images/toon_venus.png">  
+        </div> 
+
+        <div class="lineright"></div>
 
 
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
-      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
-        <img src="/images/toon_venus.png" style="width: 120px; height: auto; ">  
-        </div> <!--separate-->
-      </div>
+    </div><!--venus.png-->
 
 
+    <div class="topichead">ชั้นบรรยากาศ</div> <!--topichead-->
 
-      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-        <div class="column is-2">
-          <div class="textboxheader">
-            <h2>การสำรวจ</h2>
-          </div>
-        </div>
-      </div> <!--header-->
+      <div class="container piccontent" style="width: 500px;">   
+        <img src="/images/3venus/ven(10).jpg" style="width: 500px;">
+        </div> 
 
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(6).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
+      <div class="content"> <!--content7--> 
         <div class="textbox">
-          <p class="MessageParagraph">
-            ถึงแม้ชั้นเมฆหนาทึบจะคอยบดบังไม่ให้เห็นพื้นผิวดาวศุกร์ที่อยู่ใต้ลงไปได้ แต่ก็สามารถทำแผนที่ดาวศุกร์โดยการใช้เรดาร์ได้ ในแผนที่แสดงภูเขาไฟจำนวนมากและหลุมอุกกาบาตขนาดใหญ่บนดาวศุกร์ ซึ่งไม่มีหลุมอุกกาบาตที่มีความกว้างน้อยกว่า 3 กิโลเมตรเลย เนื่องจากดาวตกขนาดเล็กมักถูกเผาไหม้จนหมดไปในชั้นเมฆหนาทึบก่อนที่จะถึงพื้นผิวดาวศุกร์
-          </p> <br>
-          <p class="MessageParagraph">
-            อดีตสหภาพโซเวียต สหรัฐฯ องค์การอวกาศยุโรป และญี่ปุ่นได้ส่งยานไปสำรวจดาวศุกร์ ตั้งแต่ยานมารีเนอร์ 2 (Mariner 2) ยานลำแรกที่สำรวจดาวศุกร์ในปี ค.ศ.1962 จากนั้นก็มียานไปสำรวจดาวศุกร์มากกว่า 25 ลำ โดยยานลำแรกที่โคจรรอบดาวศุกร์ คือ ยานมาเจลลัน (Magellan) ซึ่งทำภาพและแผนที่พื้นผิวดาวศุกร์ด้วยเรดาร์
-          </p> <br>
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-
-
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
-      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
-        <img src="/images/toon_venus.png" style="width: 120px; height: auto; ">  
-        </div> <!--separate-->
-      </div>
-
-      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-        <div class="column is-2">
-          <div class="textboxheader">
-            <h2>วงโคจร</h2> 
-          </div>
+            <p> 
+            ชั้นบรรยากาศของดาวศุกร์มีความหนาแน่นมาก โดยมีความดันบรรยากาศมากกว่า 90 เท่าเมื่อเทียบกับโลก ชั้นบรรยากาศของดาวศุกร์<br>ประกอบด้วยแก๊สคาร์บอนไดออกไซต์เป็นหลักถึง 96.5 เปอร์เซนต์ ซึ่งชั้นของแก๊สคาร์บอนไดออกไซด์นี้ปกคลุมตั้งแต่พื้นผิวของดาวศุกร์สูงถึง <br>80 กิโลเมตร เหนือจากนั้นยังมีชั้นของกลุ่มเมฆที่ประกอบไปด้วยกรดซัลฟิวริก แสงจากดวงอาทิตย์ที่ส่องมายังดาวศุกร์ส่วนใหญ่กว่า 80 เปอร์เซนต์<br>จะถูกสะท้อนโดยกลุ่มเมฆกลับไปสู่อวกาศ ส่วนรังสีความร้อนที่ปลดปล่อยจากพื้นผิวดาวศุกร์จะถูกดูดกลืนด้วยแก๊สคาร์บอนไดออกไซด์ทำให้<br>ไม่สามารถระบายความร้อนไปสู่อวกาศได้ จึงทำให้เกิดปรากฏการณ์เรือนกระจกขึ้นบนดาวศุกร์อย่างรุนแรง อุณหภูมิบนดาวศุกร์ที่เส้นผ่านศูนย์กลาง<br>และที่ขั้วจะไม่แตกต่างกันมากนัก คืออยู่ที่ประมาณ 464 องศาเซลเซียสไม่ว่าจะเป็นช่วงกลางวันหรือกลางคืนก็ตาม
+          </p>
         </div>
-      </div> <!--header-->
+      </div> 
+
+      <div class="container piccontent">   
+        <img src="/images/3venus/ven(11).jpg" style="width: 360px;">
+        </div> 
+
+
+    <div class="container planetpng" style="width:120px;">
+        <img src="/images/toon_venus.png" style="margin-bottom:200px">  
+      </div> <!--venus.png-->
+
       
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(7).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
-             <p class="MessageParagraph">
-            วงโคจรของดาวศุกร์มีความรีน้อยมาก(คือใกล้เคียงวงกลม) คือมีจุดใกล้ดวงอาทิตย์ที่สุด(perihelion) 107.5 ล้านกิโลเมตร และจุดไกลดวงอาทิตย์ที่สุด(aphelion) 108.9 ล้านกิโลเมตร ดาวศุกร์เป็นดาวเคราะห์ที่ไม่มีฤดูกาลเช่นเดียวกับดาวพุธด้วยเหตุที่ว่าระนาบการโคจรกับระนาบของเส้นผ่านศูนย์กลางดาวศุกร์เกือบเป็นระนาบเดียวกัน
-          </p> <br>
-
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(8).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
-          <p class="MessageParagraph">
-           นอกจากนี้ดาวศุกร์เป็นหนึ่งในสองดาวเคราะห์ในระบบสุริยะ (ดาวเคราะห์อีกดวงคือยูเรนัส) ที่มีทิศทางการหมุนรอบตัวเองกับทิศทางการโคจรรอบดวงอาทิตย์ที่ต่างกัน คือมีทิศทางการโคจรรอบดวงอาทิตย์ในลักษณะทวนเข็มนาฬิกา ส่วนทิศทางการหมุนรอบตัวเองมีลักษณะไปตามเข็มนาฬิกา
-          </p> <br>
-
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
-      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
-        <img src="/images/toon_venus.png" style="width: 120px; height: auto; ">  
-        </div> <!--separate-->
-      </div>
-
-
-
-
-      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-        <div class="column is-2">
-          <div class="textboxheader">
-            <h2>โครงสร้าง</h2>
-          </div>
-        </div>
-      </div> <!--header-->
-        
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-        <img src="/images/3venus/ven(9).jpg" style="width: 360px; height: auto; ">  
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
-          <p class="MessageParagraph">
-           ดาวศุกร์เป็นดาวที่มีขนาดและมวลที่ใกล้เคียงกับโลกมากนักวิทยาศาสตร์จึงเชื่อว่าโครงสร้างของดาวศุกร์มีความคล้ายคลึงกับโลก โดยแกนชั้นใน (inner core) ประกอบไปด้วยโลหะแข็ง(เหล็กและนิกเกิล) ส่วนแกนชั้นนอก (outer core) เป็นโลหะเหลวที่เป็นเหล็กและนิกเกิลเช่นเดียวกับแกนชั้นใน แต่ไม่ปรากฏว่าไม่สามารถวัดสนามแม่เหล็กของดาวศุกร์ได้ ทั้งนี้เนื่องจากว่าดาวศุกร์มีการหมุนรอบตัวเองที่ช้ามากเมื่อเทียบกับโลกจึงไม่สามารถทำให้โลหะเหลวในแกนชั้นนอกเเกิดการหมุนเวียน(circulation)ได้ จึงไม่ทำให้เกิดสนามแม่เหล็ก ในส่วนของชั้นแมนเทิลจะเป็นหินและชั้นเปลือกจะประกอบด้วยซิลิเกตเป็นหลัก พื้นผิวของดาวศุกร์จะมีความแห้งแล้งและร้อนกว่าดาวเคราะห์อื่นๆในระบบสุริยะ 
-          </p> <br>
-
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 100px 0; " >
-      <div class="container has-text-centered" style="width: 120px; height: auto; " >   <!-- picture column -->
-        <img src="/images/toon_venus.png" style="width: 120px; height: auto; ">  
-        </div> <!--separate-->
-      </div>
-
-
-
-      <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-        <div class="column is-2">
-          <div class="textboxheader">
-            <h2>ชั้นบรรยากาศ</h2> 
-          </div>
-        </div>
-      </div><!--header-->
-
-
-    <div class="columns" style= "width: 100%; height: auto; margin: 0 100px;" >  
-      <!-- big column and add margin left right 240px -->   <!-- -->
-
-        <div class="column is-one-quarter" style="width: 360px; height: auto; " >   <!-- picture column -->
-      <img src="/images/3venus/ven(10).jpg" style="width: 360px; height: auto; ">
-        </div>
-
-        <div class="column is-8"> <!-- short data column is auto -->
-        <div class="textbox">
-          <p class="MessageParagraph">
-            ชั้นบรรยากาศของดาวศุกร์มีความหนาแน่นมาก โดยมีความดันบรรยากาศมากกว่า 90 เท่าเมื่อเทียบกับโลก ชั้นบรรยากาศของดาวศุกร์ประกอบด้วยแก๊สคาร์บอนไดออกไซต์เป็นหลักถึง 96.5 เปอร์เซนต์ ซึ่งชั้นของแก๊สคาร์บอนไดออกไซด์นี้ปกคลุมตั้งแต่พื้นผิวของดาวศุกร์สูงขึ้นไปถึง 80 กิโลเมตร เหนือจากนั้นยังมีชั้นของกลุ่มเมฆที่ประกอบไปด้วยกรดซัลฟุริก แสงจากดวงอาทิตย์ที่ส่องมายังดาวศุกร์ส่วนใหญ่กว่า 80 เปอร์เซนต์จะถูกสะท้อนโดยกลุ่มเมฆกลับไปสู่อวกาศ ส่วนรังสีความร้อนที่ปลดปล่อยจากพื้นผิวดาวศุกร์จะถูกดูดกลืนด้วยแก๊สคาร์บอนไดออกไซด์ทำให้ไม่สามารถระบายความร้อนไปสู่อวกาศได้ จึงทำให้เกิดปรากฏการณ์เรือนกระจกขึ้นบนดาวศุกร์อย่างรุนแรง อุณหภูมิบนดาวศุกร์ที่เส้นผ่านศูนย์กลางและที่ขั้วโลกจะไม่แตกต่างกันมากนัก คืออยู่ที่ประมาณ 464 องศาเซลเซียสไม่ว่าจะเป็นช่วงกลางวันหรือกลางคืนก็ตาม
-          </p> <br>
-
-        </div> 
-      </div>
-
-    </div> <!-- pic left -->
-
   </main>
+
 </body>
     </main> 
   </section>
