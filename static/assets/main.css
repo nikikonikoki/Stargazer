@@ -470,7 +470,7 @@ body {
 }
 
 .body .text1  {
-	position: fixed;
+	position: absolute;
 	background-image: url(/images/galaxy1.jpg);	
 }
 
