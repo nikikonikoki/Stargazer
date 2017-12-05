@@ -43,11 +43,11 @@ body {
 }
 
 .body h3  {
-	position: fixed;
-	font-size:40px;
+	position: absolute;
+	font-size: 45px;
 	font-family: nithan;
 	top: 100px ;
-	right: 620px;
+	right:570px;
 	z-index: 999;
 }
 
@@ -65,7 +65,7 @@ body {
 	position: absolute;
     padding: 40px 65px !important;
     margin-top: 180px;
-    margin-left: 100px;
+    margin-left: 160px;
     background-color: #32691F ;
     border-color: #32691F;
 }
@@ -83,7 +83,7 @@ body {
 	position: absolute;
 	padding: 40px 65px !important;
     margin-top: 180px;
-    margin-left:1400px;
+    margin-left:1300px;
     background-color: #CC653E ;
     border-color: #CC653E;
 }
@@ -92,7 +92,134 @@ body {
 	position: absolute;
 	width: 200px;
 	height: 90px;
+	top: 160px;
+	left: 30px;
+	z-index: 999;
+}
+
+.easy .two {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 160px;
+	left: 140px;
+	z-index: 999;
+}
+
+.easy .three {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 230px;
+	left: 30px;
+	z-index: 999;
+}
+
+.easy .four {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 230px;
+	left: 140px;
+	z-index: 999;
+}
+
+.easy .five {
+	position: absolute;
+	width: 200px;
+	height: 90px;
 	top: 300px;
-	left: 50px;
+	left: 86px;
+	z-index: 999;
+}
+
+.middle .one {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 320px;
+	left: 630px;
+	z-index: 999;
+}
+
+
+.middle .two {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 320px;
+	left: 850px;
+	z-index: 999;
+}
+
+.middle .three {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top:  460px;
+	left: 630px;
+	z-index: 999;
+}
+
+.middle .four {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top:  460px;
+	left: 850px;
+	z-index: 999;
+}
+
+.middle .five {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 600px;
+	left: 735px;
+	z-index: 999;
+}
+
+.hard .one {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 320px;
+	left:1200px;
+	z-index: 999;
+}
+
+.hard .two {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 320px;
+	left:1420px;
+	z-index: 999;
+}
+
+.hard .three {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top:  460px;
+	left: 1200px;
+	z-index: 999;
+}
+
+.hard .four {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 460px;
+	left:1420px;
+	z-index: 999;
+}
+
+.hard .five {
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	top: 600px;
+	left:1310px;
 	z-index: 999;
 }
