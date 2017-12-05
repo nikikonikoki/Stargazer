@@ -85,12 +85,15 @@ body {
 }
 
 .header .navbar .navbar-burger {
+	position: absolute;
 	display: block !important;
 	background-color: transparent;
 	border: none;
+	margin-top: 20px;
 }
 
 .header .navbar .navbar-burger span {
+	position: absolute;
 	background-color: white;
 	height: 4px;
 	width:  2rem;
