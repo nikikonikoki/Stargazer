@@ -13,11 +13,74 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/planet_moveVer.css">
+  <link rel="stylesheet" type="text/css" href="/assets/planet_move.css">
   {% block stylesheet %}{% endblock %}
 </head>
 <body style ="width: 100%;overflow:hidden;">
-  {% include 'layout/header.twig' ignore missing %}
+  <!--{% include 'layout/header.twig' ignore missing %}-->
+
+  <header class="header" style="height:80px">
+  <nav class="navbar"style="height:80px">
+    <div class="navbar-brand">
+       <button class="button navbar-burger" data-target="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="navbar-start">
+        <a class= "logo" href="/home">
+          <img src="/images/logo.png" title="ไปหน้า Home" width="50" height="50">
+        </a>
+        <div class="navbar-item">
+          <p class="control has-icons-right">
+            <input type="text" name="keywords" class="input" size="50">
+            <span class="icon is-small is-right">
+              <i class="fa fa-search"></i>
+            </span>
+          </p>
+        </div>
+        <div class="user">
+        <p class="control has-icons-left">
+          <input type="text" name="keywords" class="input" size="20">
+            <span class="icon is-small is-left">
+              <i class="fa fa-user"></i>
+            </span>
+        </p>
+      </div>
+      <div class="password">
+        <p class="control has-icons-left">
+          <input type="password" name="keywords" class="input" size="20">
+          <span class="icon is-small is-left">
+            <i class="fa fa-lock"></i>
+          </span>
+          </p>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="log-in">
+        <a href="#">เข้าสู่ระบบ</a>
+      </div>
+
+       <div class="sign-in">
+        <a href="/assets/signup.html">ลงทะเบียน </a>
+      </div> 
+      <div class="help">
+        <a href="/help"><img src="/images/qes.png" title="คำแนะนำการใช้งานปุ่มต่างๆในเว็บ" width="50" height="50"> </a>
+      </div>
+    </div>
+    
+  </nav>
+
+  <div id="menu" class="navbar-menu">
+    <a class="navbar-item" href="/our-zodiac">กลุ่มดาวจักรราศี</a>
+    <a class="navbar-item" href="/our-solar-system">ระบบสุริยะ</a>
+    <a class="navbar-item" href="/our-star">กลุ่มดาวที่น่าสนใจ</a>
+    <a class="navbar-item" href="/our-mysolar">เกมจิ๊กซอว์ระบบสุริยะ</a>
+  </div>
+  </header>
       
   <section class="section" style="background-image: url(/images/galaxy1.jpg);width: 100%;height: 100%;overflow:hidden;position:absolute;">
     <main>
